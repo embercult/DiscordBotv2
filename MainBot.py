@@ -40,4 +40,4 @@ async def rating(ctx, usern: str):
 
 
 
-bot.run("NOP NOP NOP U CANT SEE THIS")
+bot.run("NOP NOP U CANT SEE THIS")
