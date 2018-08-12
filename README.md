@@ -1,6 +1,6 @@
 # Discordbot-THE-FIRST
 
-So this is my discord bot , the high about of files are cause I used pycharm and it just loves to makes so many files (its quite handy tho try it)
+So this is my discord bot , the high amount of files are cause I used pycharm and it just loves to makes so many files (its quite handy tho try it)
 
 Anyways about this bot,
 
