@@ -12,11 +12,12 @@ Currently supports:
     !cookie -> replies with cookie emoji
 
     !rating [username] -> Tells codechef rating of the given user
- 
+    
+    !verify [name] -> Will verify the if the given name is indeed of the user who said it and will add it to the sqlite database along with bunch of other stuff related to that user for future use
  
 Almost done commands:
 
-    !verify [name] -> Will verify the if the given name is indeed of the user who said it and will add it to the sqlite database along with bunch of other stuff related to that user for future use
+    !verify [name] -> I think this can be improved a lot so ill do that when i get some sleep
  
  
 Final goal?
