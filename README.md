@@ -5,21 +5,20 @@ Anyways about this bot,
 Currently supports:
 
 
-!ping -> Says pong
+    !ping -> Says pong
 
-!cookie -> replies with cookie emoji
+    !cookie -> replies with cookie emoji
 
-!rating [username] -> Tells codechef rating of the given user
+    !rating [username] -> Tells codechef rating of the given user
  
  
 Almost done commands:
 
-!verify [name] -> Will verify the if the given name is indeed of the user who said it and will add it to the sqlite database along with 
-bunch of other stuff related to that user for future use
+    !verify [name] -> Will verify the if the given name is indeed of the user who said it and will add it to the sqlite database along with bunch of other stuff related to that user for future use
  
  
 Final goal?
 
-FETCH ATTANDENCE AND STUFF FROM WEBKIOSK!!!!!!!!!!!!!!!!
+    FETCH ATTANDENCE AND STUFF FROM WEBKIOSK!!!!!!!!!!!!!!!!
 
-lol will take ages tho
+    lol will take ages tho
