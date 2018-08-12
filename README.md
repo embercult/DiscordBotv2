@@ -1,7 +1,9 @@
 # Discordbot-THE-FIRST
 
 So this is my discord bot , the high about of files are cause I used pycharm and it just loves to makes so many files (its quite handy tho try it)
+
 Anyways about this bot,
+
 Currently supports:
 
 
@@ -19,6 +21,6 @@ Almost done commands:
  
 Final goal?
 
-    FETCH ATTANDENCE AND STUFF FROM WEBKIOSK!!!!!!!!!!!!!!!!
+   FETCH ATTANDENCE AND STUFF FROM WEBKIOSK!!!!!!!!!!!!!!!!
 
-    lol will take ages tho
+   lol will take ages tho
