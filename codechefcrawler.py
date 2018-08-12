@@ -5,7 +5,7 @@ import re
 
 def timecheck(t):
     t = t.split(' ')
-    if t[1] == 'hours' or t[1] == 'days' or (t[1] == 'min' and int(t[0]) >= 20):
+    if t[1] == 'hours' or t[1] == 'days' or (t[1] == 'min' and int(t[0]) >= 2):
         return False
     else:
         return True
