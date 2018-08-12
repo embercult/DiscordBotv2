@@ -1,6 +1,10 @@
-import sqlitedb as sql
-sql.createtable()
-sql.adduser('ember', 'lol', 1111)
-sql.adduser('f31er', 'l123l', 8811)
-sql.adduser('efas', 'l11l', 1123)
-sql.printall()
+import time
+
+old = time.time()
+
+while True:
+    time.sleep(5)
+    print(time.time() - old)
+    if time.time() - old > 10:
+        print(time.time() - old)
+        print ("passed")

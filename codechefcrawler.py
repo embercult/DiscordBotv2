@@ -5,15 +5,17 @@ import re
 
 def timecheck(t):
     t = t.split(' ')
-    if t[1] == 'hours' or t[1] == 'days' or (t[1] == 'min' and int(t[0]) >= 3):
+    if t[1] == 'hours' or t[1] == 'days' or (t[1] == 'min' and int(t[0]) >= 20):
         return False
     else:
         return True
 
 
 def usercheck(user):
-
-    return timecheck(getusers()[user])
+    try:
+        return timecheck(getusers()[user])
+    except:
+        return False
 
 
 def getusers():

@@ -26,9 +26,7 @@ def adduser(handle,usern,rating):
     conn.commit()
     cclose()
 
-def printall():
+def searchuser(usern):
     copen()
-    sqlstr = 'SELECT * FROM Users'
-    for row in cur.execute(sqlstr):
-        print(str(row[0]), row[1], row[2])
+    return(cur.execute("SELECT handle FROM Users WHERE usern LIKE ? ", (usern,)).fetchall())
     cclose()

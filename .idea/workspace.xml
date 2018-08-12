@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="555fd309-8c95-4cc3-8f8a-810489eee87e" name="Default Changelist" comment="" />
+    <list default="true" id="555fd309-8c95-4cc3-8f8a-810489eee87e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/MainBot.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainBot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codechefcrawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/codechefcrawler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/justtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/justtest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlitedb.py" beforeDir="false" afterPath="$PROJECT_DIR$/sqlitedb.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,51 +23,57 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="7" />
+          <entry key="py" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="7" />
+          <entry key="Python" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="347" />
+          <entry key="py" value="2554" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="347" />
+          <entry key="Python" value="2554" />
         </counts>
       </usages-collector>
     </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Discordbot" />
   </component>
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MainBot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="187">
+              <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
                 <element signature="e#173#206#0" />
-                <element signature="e#299#431#0" />
-                <element signature="e#522#627#0" />
+                <element signature="e#701#1003#0" />
+                <marker date="1534107441431" expanded="true" signature="285:895" ph="..." />
+                <marker date="1534107441431" expanded="true" signature="955:1052" ph="..." />
+                <marker date="1534107441431" expanded="true" signature="1429:1526" ph="..." />
+                <marker date="1534107441431" expanded="true" signature="2473:3026" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sqlitedb.py">
+        <entry file="file://$PROJECT_DIR$/codechefcrawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+            <state relative-caret-position="117">
+              <caret line="7" column="78" selection-start-line="7" selection-start-column="78" selection-end-line="7" selection-end-column="78" />
               <folding>
-                <marker date="1534093677129" expanded="true" signature="144:163" ph="..." />
-                <marker date="1534093677129" expanded="true" signature="574:701" ph="..." />
+                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#894#1150#0" />
               </folding>
             </state>
           </provider>
@@ -71,19 +82,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/justtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="17" />
+            <state relative-caret-position="136">
+              <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codechefcrawler.py">
+        <entry file="file://$PROJECT_DIR$/sqlitedb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+            <state relative-caret-position="252">
+              <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <marker date="1534099908385" expanded="true" signature="144:163" ph="..." />
+                <marker date="1534099908385" expanded="true" signature="581:687" ph="..." />
               </folding>
             </state>
           </provider>
@@ -98,15 +110,19 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/codechefcrawler.py" />
         <option value="$PROJECT_DIR$/venv/sqlitedb.py" />
         <option value="$PROJECT_DIR$/venv/dqlitdb.py" />
         <option value="$PROJECT_DIR$/fds.py" />
         <option value="$PROJECT_DIR$/venv/justtest.py" />
         <option value="$PROJECT_DIR$/sqlitedb.py" />
+        <option value="$PROJECT_DIR$/codechefcrawler.py" />
+        <option value="$PROJECT_DIR$/justtest.py" />
         <option value="$PROJECT_DIR$/MainBot.py" />
       </list>
     </option>
@@ -117,6 +133,7 @@
     <option name="width" value="1346" />
     <option name="height" value="728" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -154,6 +171,11 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vipla\OneDrive\GitHub\Discordbot" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -166,7 +188,49 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.justtest">
+  <component name="RunManager" selected="Python.justtest (1)">
+    <configuration name="MainBot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Discordbot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MainBot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="justtest (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Discordbot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/justtest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="justtest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Discordbot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -212,9 +276,13 @@
     <list>
       <item itemvalue="Python.sqlitedb" />
       <item itemvalue="Python.justtest" />
+      <item itemvalue="Python.justtest (1)" />
+      <item itemvalue="Python.MainBot" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.MainBot" />
+        <item itemvalue="Python.justtest (1)" />
         <item itemvalue="Python.justtest" />
         <item itemvalue="Python.sqlitedb" />
       </list>
@@ -237,16 +305,16 @@
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Favorites" sideWeight="0.5022936" side_tool="true" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4977064" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32923076" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32923076" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -269,43 +337,47 @@
     <entry file="file://$PROJECT_DIR$/fds.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/codechefcrawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sqlitedb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+        <state relative-caret-position="252">
+          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
           <folding>
-            <marker date="1534093677129" expanded="true" signature="144:163" ph="..." />
-            <marker date="1534093677129" expanded="true" signature="574:701" ph="..." />
+            <marker date="1534099908385" expanded="true" signature="144:163" ph="..." />
+            <marker date="1534099908385" expanded="true" signature="581:687" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/justtest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="17" />
+        <state relative-caret-position="136">
+          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codechefcrawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="7" column="78" selection-start-line="7" selection-start-column="78" selection-end-line="7" selection-end-column="78" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#894#1150#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MainBot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="187">
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
             <element signature="e#173#206#0" />
-            <element signature="e#299#431#0" />
-            <element signature="e#522#627#0" />
+            <element signature="e#701#1003#0" />
+            <marker date="1534107441431" expanded="true" signature="285:895" ph="..." />
+            <marker date="1534107441431" expanded="true" signature="955:1052" ph="..." />
+            <marker date="1534107441431" expanded="true" signature="1429:1526" ph="..." />
+            <marker date="1534107441431" expanded="true" signature="2473:3026" ph="..." />
           </folding>
         </state>
       </provider>
