@@ -11,6 +11,10 @@ bot = commands.Bot(command_prefix="!")
 pending = {}
 
 
+
+
+
+
 def hello():
 
     if len(pending):
@@ -62,6 +66,9 @@ def verified(usern, id, rating):
 async def on_ready():
     print("Lol it actually started!")
 
+@bot.event
+async def on_command_error(ctx, error):
+    print('well someone error occured and i dont wanna know what')
 
 @bot.command(pass_context=True)
 async def cookie(ctx, member: discord.Member = None):
@@ -80,7 +87,6 @@ async def ping(ctx, member: discord.Member = None):
 
 @bot.command(pass_context=True)
 async def rating(ctx, usern: discord.User):
-
     member = ctx.message.author.id
     try:
         x = sql.searchid(usern.id)
@@ -88,19 +94,18 @@ async def rating(ctx, usern: discord.User):
         rating = x
     except IndexError:
         rating = False
-
-
     if rating != False:
         await bot.say("<@{}>, <@{}>'s rating is {}!".format(member, usern.id, rating))
     else:
-        await bot.say("""<@{}>, No user called <@{}> found in database
-Try searching with code chef handle""".format(member, usern.id))
+        await bot.say("""<@{}>, The user <@{}> has not linked their code chef profile with discord!
+Try searching with code chef handle using the command `!ccrating [name]`""".format(member, usern.id))
+
 
 @bot.command(pass_context=True)
 async def ccrating(ctx, usern):
     if usern.startswith("<@"):
         return
-
+    member = ctx.message.author.id
     usern = usern.lower()
 
     rating = cc.userrating(usern)
@@ -135,6 +140,25 @@ async def printdb(ctx):
         await bot.say(sql.printdb())
 
 
+@bot.command(pass_context=True)
+async def commands(ctx):
+    await bot.say("""This bot was made by `Embercult`!
+Current commands:
+    
+    
+    `!ping` - Bot will reply with pong if its wokring!
+    
+    
+    `!cookie (user)` - Bot will reply with cookie mentioning the (user) if no user was mentioned it will mention the sender!
+    
+    
+    `!ccrating (code_chef_username)` - Bot will do some magic and will give you code chef rating of the given username
+    
+    
+    `!verify (code_chef_username)` - Bot will again do some magic and will link the given username to your discord account if you pass its test!
+    
+    
+    `!rating (user)` - Bot will do magic and tell you the rating of the mentioned user if he has linked his code chef to discord""")
 
 
 bot.run("NDc3NTEyNTU2NjMwNTA3NTMw.DlLLdA.V7cGbofNfLelzbf4LyUr24eUyfo")
