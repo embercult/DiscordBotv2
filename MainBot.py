@@ -137,4 +137,4 @@ async def printdb(ctx):
 
 
 
-bot.run("NDc3NTEyNTU2NjMwNTA3NTMw.DlKW7g.0l_SrlQZBwlEZzJw3EYgnuEkmIM")
+bot.run("NDc3NTEyNTU2NjMwNTA3NTMw.DlLLdA.V7cGbofNfLelzbf4LyUr24eUyfo")
