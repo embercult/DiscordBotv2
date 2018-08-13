@@ -66,9 +66,9 @@ def verified(usern, id, rating):
 async def on_ready():
     print("Lol it actually started!")
 
-@bot.event
-async def on_command_error(ctx, error):
-    print('well someone error occured and i dont wanna know what')
+# @bot.event
+# async def on_command_error(ctx, error):
+#     print('well someone error occured and i dont wanna know what')
 
 @bot.command(pass_context=True)
 async def cookie(ctx, member: discord.Member = None):
