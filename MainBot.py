@@ -124,7 +124,7 @@ async def verify(ctx, usern: str):
         x = x[0][0]
         await bot.say("<@{}>, {} is already linked with <@{}>! Please check the spelling!".format(member, usern, x))
 
-    except IndexError:
+    except (IndexError,TypeError) as e:
         await bot.say("""<@{}>```python
 You have 1 min to submit a solution to this problem to link {} to your discord id!
 (Wrong answers will work too)```https://www.codechef.com/problems/HS08TEST

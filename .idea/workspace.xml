@@ -54,27 +54,27 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MainBot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="162" column="36" selection-start-line="162" selection-start-column="36" selection-end-line="162" selection-end-column="36" />
+            <state relative-caret-position="541">
+              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
                 <element signature="e#296#884#0" />
                 <element signature="e#284#763#0" />
                 <element signature="e#871#960#0" />
                 <element signature="e#1000#1435#0" />
-                <element signature="e#1568#1580#0" />
                 <element signature="e#1600#1732#0" />
                 <element signature="e#1823#1940#0" />
                 <element signature="e#2493#2830#0" />
                 <element signature="e#2903#3447#0" />
                 <element signature="e#3511#3617#0" />
-                <marker date="1534158112154" expanded="false" signature="208:210" ph="..." />
-                <marker date="1534158112154" expanded="false" signature="222:228" ph="..." />
-                <marker date="1534158112154" expanded="true" signature="1572:1641" ph="..." />
-                <marker date="1534158112154" expanded="true" signature="2105:2106" ph="..." />
-                <marker date="1534158112154" expanded="true" signature="2149:2150" ph="..." />
-                <marker date="1534158112154" expanded="true" signature="3734:4647" ph="..." />
-                <marker date="1534158112154" expanded="true" signature="3905:4647" ph="..." />
+                <element signature="e#3901#3910#0" />
+                <marker date="1534162356536" expanded="false" signature="208:210" ph="..." />
+                <marker date="1534162356536" expanded="false" signature="222:228" ph="..." />
+                <marker date="1534162356536" expanded="true" signature="1576:1647" ph="..." />
+                <marker date="1534162356536" expanded="true" signature="2111:2112" ph="..." />
+                <marker date="1534162356536" expanded="true" signature="2155:2156" ph="..." />
+                <marker date="1534162356536" expanded="true" signature="3740:4653" ph="..." />
+                <marker date="1534162356536" expanded="true" signature="3911:4653" ph="..." />
               </folding>
             </state>
           </provider>
@@ -127,6 +127,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>rating</find>
+      <find>error</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -339,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534158154985</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="err trying to work out this stuff so its up 24x7 without exposing the token">
+      <created>1534162381802</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1534162381802</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -435,27 +443,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MainBot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="162" column="36" selection-start-line="162" selection-start-column="36" selection-end-line="162" selection-end-column="36" />
+        <state relative-caret-position="541">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
             <element signature="e#296#884#0" />
             <element signature="e#284#763#0" />
             <element signature="e#871#960#0" />
             <element signature="e#1000#1435#0" />
-            <element signature="e#1568#1580#0" />
             <element signature="e#1600#1732#0" />
             <element signature="e#1823#1940#0" />
             <element signature="e#2493#2830#0" />
             <element signature="e#2903#3447#0" />
             <element signature="e#3511#3617#0" />
-            <marker date="1534158112154" expanded="false" signature="208:210" ph="..." />
-            <marker date="1534158112154" expanded="false" signature="222:228" ph="..." />
-            <marker date="1534158112154" expanded="true" signature="1572:1641" ph="..." />
-            <marker date="1534158112154" expanded="true" signature="2105:2106" ph="..." />
-            <marker date="1534158112154" expanded="true" signature="2149:2150" ph="..." />
-            <marker date="1534158112154" expanded="true" signature="3734:4647" ph="..." />
-            <marker date="1534158112154" expanded="true" signature="3905:4647" ph="..." />
+            <element signature="e#3901#3910#0" />
+            <marker date="1534162356536" expanded="false" signature="208:210" ph="..." />
+            <marker date="1534162356536" expanded="false" signature="222:228" ph="..." />
+            <marker date="1534162356536" expanded="true" signature="1576:1647" ph="..." />
+            <marker date="1534162356536" expanded="true" signature="2111:2112" ph="..." />
+            <marker date="1534162356536" expanded="true" signature="2155:2156" ph="..." />
+            <marker date="1534162356536" expanded="true" signature="3740:4653" ph="..." />
+            <marker date="1534162356536" expanded="true" signature="3911:4653" ph="..." />
           </folding>
         </state>
       </provider>
