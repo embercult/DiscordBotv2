@@ -161,4 +161,4 @@ Current commands:
     `!rating (user)` - Bot will do magic and tell you the rating of the mentioned user if he has linked his code chef to discord""")
 
 
-bot.run("NDc3NTEyNTU2NjMwNTA3NTMw.DlLLdA.V7cGbofNfLelzbf4LyUr24eUyfo")
+bot.run("token")
