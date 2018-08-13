@@ -11,15 +11,22 @@ Currently supports:
 
     !cookie -> replies with cookie emoji
 
-    !rating [username] -> Tells codechef rating of the given user
+    !rating [@user] -> Tells codechef rating of the mentioned user (fetches from the database aka user needs to be in the database)
+    
+    !ccrating [user] -> Tells codechef rating of the mentioned user from the website
     
     !verify [name] -> Will verify the if the given name is indeed of the user who said it and will add it to the sqlite database along with bunch of other stuff related to that user for future use
  
-Almost done commands:
+ 
 
-    !verify [name] -> I think this can be improved a lot so ill do that when i get some sleep
- 
- 
+coming soon
+
+
+    !update db -> update rating in the database
+    
+    !unverify -> removes the currently linked account (why tho)
+
+
 Final goal?
 
    FETCH ATTANDENCE AND STUFF FROM WEBKIOSK!!!!!!!!!!!!!!!!
