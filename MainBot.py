@@ -12,18 +12,14 @@ pending = {}
 
 
 def hello():
-    print(pending)
 
-    {k: v for k, v in pending.items() if v is not None}
     if len(pending):
 
         for i in list(pending.keys()):
-            print("in the loop" , i)
             z = cc.usercheck(i)
-            print("did it find user?", z)
             if z:
                 sql.adduser(pending[i][0], i, cc.userrating(i))
-                print("added shit to sql")
+                print("added shit to sql, name = {} , ccname = {} and the rating".format(pending[i][0], i))
                 verified(pending[i][0], i, cc.userrating(i))
                 del pending[i]
             else:
@@ -32,11 +28,11 @@ def hello():
                     notverified(pending[i][0], i)
                     del pending[i]
 
-    t = Timer(30, hello)
+    t = Timer(60, hello)
     t.start()
 
 
-t = Timer(30, hello)
+t = Timer(60, hello)
 t.start()
 
 
@@ -70,9 +66,9 @@ async def on_ready():
 @bot.command(pass_context=True)
 async def cookie(ctx, member: discord.Member = None):
     if member is None:
-        member = ctx.message.author.id
+        member = ctx.message.author
 
-    await bot.say("<@{}> heres a cookie for you :cookie:".format(member))
+    await bot.say("<@{}> heres a cookie for you :cookie:".format(member.id))
 
 
 @bot.command(pass_context=True)
@@ -83,14 +79,36 @@ async def ping(ctx, member: discord.Member = None):
 
 
 @bot.command(pass_context=True)
-async def rating(ctx, usern: str):
-    usern = usern.lower()
+async def rating(ctx, usern: discord.User):
+
     member = ctx.message.author.id
+    try:
+        x = sql.searchid(usern.id)
+
+        rating = x
+    except IndexError:
+        rating = False
+
+
+    if rating != False:
+        await bot.say("<@{}>, <@{}>'s rating is {}!".format(member, usern.id, rating))
+    else:
+        await bot.say("""<@{}>, No user called <@{}> found in database
+Try searching with code chef handle""".format(member, usern.id))
+
+@bot.command(pass_context=True)
+async def ccrating(ctx, usern):
+    if usern.startswith("<@"):
+        return
+
+    usern = usern.lower()
+
     rating = cc.userrating(usern)
-    if rating:
+    if rating != False:
         await bot.say("<@{}>, {}'s rating is {}!".format(member, usern, rating))
     else:
-        await bot.say("<@{}>, No user called {} found! Please check the spelling!".format(member, usern))
+        await bot.say(
+            "<@{}>, No user called {} found, Please check the spelling!".format(member, usern))
 
 @bot.command(pass_context=True)
 async def verify(ctx, usern: str):
@@ -101,7 +119,6 @@ async def verify(ctx, usern: str):
         x = x[0][0]
         await bot.say("<@{}>, {} is already linked with <@{}>! Please check the spelling!".format(member, usern, x))
 
-
     except IndexError:
         await bot.say("""<@{}>```python
 You have 1 min to submit a solution to this problem to link {} to your discord id!
@@ -110,4 +127,14 @@ You have 1 min to submit a solution to this problem to link {} to your discord i
         pending[usern] = [member, time.time()]
 
 
-bot.run("NOT FOR YOU")
+@bot.command(pass_context=True)
+async def printdb(ctx):
+
+    member = ctx.message.author.id
+    if member == '139955846900613120':
+        await bot.say(sql.printdb())
+
+
+
+
+bot.run("NDc3NTEyNTU2NjMwNTA3NTMw.DlKW7g.0l_SrlQZBwlEZzJw3EYgnuEkmIM")

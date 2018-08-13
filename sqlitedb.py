@@ -19,6 +19,7 @@ def createtable():
     conn.commit()
     cclose()
 
+
 def adduser(handle,usern,rating):
     copen()
     cur.execute('''INSERT OR REPLACE INTO Users (handle, usern, rating)
@@ -26,7 +27,29 @@ def adduser(handle,usern,rating):
     conn.commit()
     cclose()
 
+
 def searchuser(usern):
     copen()
-    return(cur.execute("SELECT handle FROM Users WHERE usern LIKE ? ", (usern,)).fetchall())
+    try:
+        return cur.execute("SELECT handle FROM Users WHERE usern LIKE ? ", (usern,)).fetchall()[0][0]
+    except IndexError:
+        return False
+    cclose()
+
+
+def searchid(id):
+    copen()
+    try:
+        return cur.execute("SELECT rating FROM Users WHERE handle LIKE ? ", (id,)).fetchall()[0][0]
+    except IndexError:
+        return False
+    cclose()
+
+
+def printdb():
+    copen()
+    x = []
+    for row in cur.execute('SELECT * FROM Users'):
+        x.append([str(row[0]), str(row[1]) , row[2]])
+    return x
     cclose()
