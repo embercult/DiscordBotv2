@@ -4,7 +4,7 @@ import codechefcrawler as cc
 import sqlitedb as sql
 import time
 from threading import Timer
-
+import os
 
 bot = commands.Bot(command_prefix="!")
 
@@ -160,5 +160,5 @@ Current commands:
     
     `!rating (user)` - Bot will do magic and tell you the rating of the mentioned user if he has linked his code chef to discord""")
 
-
+token = str(os.environ.get('TOKEN', 3))
 bot.run(token)
