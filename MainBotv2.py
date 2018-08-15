@@ -12,7 +12,7 @@ invite = 'https://discordapp.com/oauth2/authorize?&client_id=477512556630507530&
 bot = commands.Bot(command_prefix="!")
 global verify
 verify = {} # {codechef name : [Time , discord id , discord name , ctx.channel.id]} ##ctx.channel.id to Send message in the same channel if the user is verified (or not)
-stats = ['A bot made by EmberCult','Current version v2','Say !commands','A bot made by Viplav','Online and ready to use!','Found any error?DM EmberCult!']
+stats = ['A bot made by EmberCult','Current version v2','Say !commands','A bot made by Viplav','Online and ready to use!','Found any error,DM EmberCult!']
 
 def rating2star(rating):
     star = 0
@@ -231,7 +231,7 @@ async def drating(ctx, user = None):
 @bot.command(pass_context=True)
 async def commands(ctx):
     embed=discord.Embed(title="**COMMANDS**", description="*A list of commands the bot currently supports*", color=0xc016d3)
-    embed.set_author(name="EC BOT",link=invite)
+    embed.set_author(name="EC BOT",url=invite)
     embed.add_field(name='!ping', value='Replies with pong if its working', inline=False)
     embed.add_field(name='!cookie [user]', value='Sends a cookie to [user]', inline=False)
     embed.add_field(name='!link [codechef username]', value='Will link the given code chef username to your discord id', inline=False)
