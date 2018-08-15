@@ -55,8 +55,9 @@ def adduser(did, dname, usern, rating):
 
 
 def searchuser(usern):
-    copen()
     createtableuserdb()
+    copen()
+
     usern = '%' + usern + '%'
     try:
         return cur.execute("SELECT rating, dname FROM Users WHERE dname LIKE ? ", (usern,)).fetchall()[0]
@@ -67,8 +68,9 @@ def searchuser(usern):
 
 
 def searchid(id):
-    copen()
     createtableuserdb()
+    copen()
+
     try:
         return cur.execute("SELECT rating FROM Users WHERE handle LIKE ? ", (id,)).fetchall()[0][0]
     except IndexError:
@@ -77,8 +79,9 @@ def searchid(id):
 
 
 def printdb():
-    copen()
     createtableuserdb()
+    copen()
+
     x = []
     for row in cur.execute('SELECT * FROM Users'):
         x.append([str(row[0]), str(row[1]) , row[2], row[3]])
