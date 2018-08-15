@@ -1,34 +1,41 @@
 # Discordbot-THE-FIRST
 
-So this is my discord bot , the high amount of files are cause I used pycharm and it just loves to makes so many files (its quite handy tho try it)
+My second discord bot, basically a rewrite of my first bot.
+<br>Anyways about this bot,
+###Add to your server!
+https://discordapp.com/oauth2/authorize?&client_id=477512556630507530&scope=bot&permissions=0
+<br>
+<br>
+###Currently supports:
 
-Anyways about this bot,
 
-Currently supports:
-
-
-    !ping -> Says pong
-
-    !cookie -> replies with cookie emoji
-
-    !rating [@user] -> Tells codechef rating of the mentioned user (fetches from the database aka user needs to be in the database)
+    !ping
+    Replies with pong if its working
     
-    !ccrating [user] -> Tells codechef rating of the mentioned user from the website
+    !cookie [user]
+    Sends a cookie to [user]
     
-    !verify [name] -> Will verify the if the given name is indeed of the user who said it and will add it to the sqlite database along with bunch of other stuff related to that user for future use
+    !link [codechef username]
+    Will link the given code chef username to your discord id
+    
+    !drating [user]
+    Gives you the rating of [user] is he/she has linked their codechef to discord
+    
+    !rating [codechef username]
+    Gives you the rating of [codechef username] directly from the website
  
  
 
-coming soon
+###Coming soon
 
 
     !update db -> update rating in the database
     
-    !unverify -> removes the currently linked account (why tho)
+    !unlink -> removes the currently linked account (why tho)
 
 
-Final goal?
 
-   FETCH ATTANDENCE AND STUFF FROM WEBKIOSK!!!!!!!!!!!!!!!!
 
-   lol will take ages tho
+##Final goal?
+
+   FETCH ATTANDENCE AND STUFF FROM WEBKIOSK!!!!!!!!!!!!!!!!<br>lol will take ages tho
