@@ -246,7 +246,7 @@ async def todo(ctx,*message):
     embed = discord.Embed(title="**To Do List**", description="*A list of you need to do!*",
                           color=0xc016d3)
     embed.set_author(name="EC BOT", url=invite)
-    if message == None:
+    if len(message) == 0:
         tasks = sql.gettodo(uid)
         if len(tasks) == 0:
             embed.add_field(name='Empty list!',value='Add some items to your todo list now!')
