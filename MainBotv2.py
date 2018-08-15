@@ -241,7 +241,7 @@ async def commands(ctx):
     await bot.say(embed=embed)
 
 @bot.command(pass_context=True)
-async def todo(ctx,message = None):
+async def todo(ctx,*message):
     uid = ctx.message.author.id
     embed = discord.Embed(title="**To Do List**", description="*A list of you need to do!*",
                           color=0xc016d3)
@@ -254,7 +254,7 @@ async def todo(ctx,message = None):
             embed.add_field(name='Task#{}'.format(i+1), value='{}'.format(tasks[i]))
     else:
         sql.addtodo(uid,message)
-        embed.add_field(name='Task added', value='{}'.format(message))
+        embed.add_field(name='Task added', value='{}'.format(' '.join(message)))
     embed.set_footer(text="Type !commands for a list of commands!")
     await bot.say(embed=embed)
 
