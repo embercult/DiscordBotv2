@@ -1,6 +1,5 @@
 import sqlite3
 
-
 def copen():
     global conn
     global cur
