@@ -6,7 +6,7 @@ My second discord bot, basically a rewrite of my first bot.
 https://discordapp.com/oauth2/authorize?&client_id=477512556630507530&scope=bot&permissions=0
 <br>
 <br>
-###Currently supports:
+<h3>Currently supports:</h3>
 
 
     !ping
