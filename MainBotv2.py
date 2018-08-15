@@ -240,6 +240,24 @@ async def commands(ctx):
     embed.set_footer(text="Type !commands for a list of commands!")
     await bot.say(embed=embed)
 
+@bot.command(pass_context=True)
+async def todo(ctx,message = None):
+    uid = ctx.message.author.id
+    embed = discord.Embed(title="**To Do List**", description="*A list of you need to do!*",
+                          color=0xc016d3)
+    embed.set_author(name="EC BOT", url=invite)
+    if message == None:
+        tasks = sql.gettodo(uid)
+        if len(tasks) == 0:
+            embed.add_field(name='Empty list!',value='Add some items to your todo list now!')
+        for i in range(len(tasks)):
+            embed.add_field(name='Task#{}'.format(i+1), value='{}'.format(tasks[i]))
+    else:
+        sql.addtodo(uid,message)
+        embed.add_field(name='Task added', value='{}'.format(message))
+    embed.set_footer(text="Type !commands for a list of commands!")
+    await bot.say(embed=embed)
+
 
 token = str(os.environ.get('TOKEN', 3))
 bot.loop.create_task(check())
