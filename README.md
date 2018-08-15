@@ -26,7 +26,7 @@ https://discordapp.com/oauth2/authorize?&client_id=477512556630507530&scope=bot&
  
  
 
-###Coming soon
+<h3>Coming soon</h3>
 
 
     !update db -> update rating in the database
@@ -36,6 +36,6 @@ https://discordapp.com/oauth2/authorize?&client_id=477512556630507530&scope=bot&
 
 
 
-##Final goal?
+<h1>Final goal</h3>
 
    FETCH ATTANDENCE AND STUFF FROM WEBKIOSK!!!!!!!!!!!!!!!!<br>lol will take ages tho
