@@ -107,7 +107,7 @@ async def on_ready():
 async def ping(ctx):
     userid = ctx.message.author.id
     tnow = datetime.datetime.utcnow()
-    lags = ctx.message.timestamp - tnow
+    lags = tnow-ctx.message.timestamp
     lags = str(lags).split(':')[2]
 
     embed = discord.Embed(title='PONG :ping_pong:', description='<@{}>  , took {} secs!'.format(userid, lags), color=discord.Color.blue())
