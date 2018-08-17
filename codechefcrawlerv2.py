@@ -32,6 +32,31 @@ def user_rating(user):
     except:
         return False
 
+def live_contest():
+    url = 'https://www.codechef.com/contests'
+    d = requests.get(url)
+    soup = Soup(d.content, 'html.parser')
+    soup = soup.find_all(class_='dataTable')[:2]
+    for i in range(len(soup)):
+     soup[i] = soup[i].find_all('tr')[1:]
+    present = len(soup[0])
+    x = []
+    y = []
+    q = []
+    w = []
+    for j in range(len(soup)):
+        for i in range(len(soup[j])):
+            x.append(soup[j][i].find_all('td'))
+    for j in range(len(x)):
+        for i in range(len(x[i])):
+            y.append(x[j][i].contents)
+        q.append(y)
+        y = []
+
+    for i in range(len(q)):
+        w.append([q[i][0][0], re.findall('">(.*?)</a>', str(q[i][1][0]))[0], re.findall('<a href="(.*?)"', str(q[i][1][0]))[0],q[i][2][0],q[i][2][2],q[i][3][0],q[i][3][2]])
+    return w, present
+
 
 def verify_user(user):
     for i in get_users():

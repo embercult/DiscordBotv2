@@ -13,7 +13,7 @@ bot = commands.Bot(command_prefix="!")
 
 
 # Some variables
-ver = 'v0.2.1.1'
+ver = 'v0.2.2.7'
 invite = 'https://discordapp.com/oauth2/authorize?&client_id=477512556630507530&scope=bot&permissions=0'
 img = 'https://i.imgur.com/GX02jaL.png'
 foot = 'For a list of commands tpye "!commands"'
@@ -271,15 +271,45 @@ async def todo(ctx,*message):
         if len(tasks) == 0:
             embed.add_field(name='Empty list!',value='Add some items to your todo list now!')
         for i in range(len(tasks)):
-            embed.add_field(name='Task#{}'.format(i+1), value='{}'.format(' '.join(tasks[i][0])))
+            embed.add_field(name='Task#{}'.format(i+1), value='{}'.format(' '.join(tasks[i])))
     else:
         sql.addtodo(uid,message)
         embed.add_field(name='Task added', value='{}'.format(' '.join(message)))
     embed.set_footer(text=foot)
+    embed.set_author(name="EC BOT", url=invite, icon_url=img)
     await bot.say(embed=embed)
+
+
+@bot.command(pass_context=True)
+async def livecontest(ctx):
+    embed1 = discord.Embed(title="**CODE CHEF CONTESTS**", description="*A list of up coming and present code chef contest!*",
+                          color=0xc016d3)
+    contests = cc.live_contest()
+    present = contests[1]
+    # code , name , link , start date , start time , end date , end time
+    embed2 = discord.Embed(title='**PRESENT CONTESTS**', description='*Currently running code chef contests!*' ,color=discord.Colour.dark_green())
+    for i in range(len(contests[0][:present])):
+        embed2.add_field(name='{} - {}'.format(contests[0][i][0], contests[0][i][1]),
+                        value='*Contest started on {} {} and will end on {} {}*'.format(contests[0][i][4],
+                                                                                      contests[0][i][3],
+                                                                                      contests[0][i][6],
+                                                                                      contests[0][i][5]), inline=False)
+    embed3= discord.Embed(title='**UPCOMING CONTESTS**', description='*Code chef contests coming soon!*', color=discord.Colour.dark_orange() )
+    for i in range(len(contests[0][present:])):
+        embed3.add_field(name='{} - {}'.format(contests[0][i][0], contests[0][i][1]),
+                        value='*Contest will start on {} {} and will end on {} {}*'.format(contests[0][i][4],
+                                                                                         contests[0][i][3],
+                                                                                         contests[0][i][6],
+                                                                                         contests[0][i][5]), inline=False)
+
+    embed3.set_footer(text=foot)
+    embed1.set_author(name="EC BOT", url=invite, icon_url=img)
+    await bot.say(embed=embed1)
+    await bot.say(embed=embed2)
+    await bot.say(embed=embed3)
 
 
 token = str(os.environ.get('TOKEN', 3))
 bot.loop.create_task(check())
 bot.loop.create_task(status())
-bot.run(token)
+bot.run('NDc3NTEyNTU2NjMwNTA3NTMw.DlgleA.l_S1JrnvWLD-Qb2_G3zP2NS8UqI')
