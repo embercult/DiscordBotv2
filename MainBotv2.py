@@ -13,11 +13,11 @@ bot = commands.Bot(command_prefix="!")
 
 
 # Some variables
-ver = 'v0.2.1'
+ver = 'v0.2.1.1'
 invite = 'https://discordapp.com/oauth2/authorize?&client_id=477512556630507530&scope=bot&permissions=0'
 img = 'https://i.imgur.com/GX02jaL.png'
 foot = 'For a list of commands tpye "!commands"'
-ccicon = 'embed.set_thumbnail(url="https://pbs.twimg.com/profile_images/470882849885667329/X48adYnt_400x400.jpeg'
+ccicon = 'https://pbs.twimg.com/profile_images/470882849885667329/X48adYnt_400x400.jpeg'
 global verify
 verify = {} # {codechef name : [Time , discord id , discord name , ctx.channel.id]} ##ctx.channel.id to Send message in the same channel if the user is verified (or not)
 stats = ['A bot made by EmberCult','Current version {}'.format(ver),'Say !commands','A bot made by Viplav','Online and ready to use!','Found any error,DM EmberCult!']
@@ -99,7 +99,7 @@ async def check():
                     embed.add_field(name='**ERROR**',
                                     value='Failed to verify your account! {} is **NOT** linked to your account!'.format(user))
                     embed.set_footer(text=foot)
-                    embed.set_author(name='EC BOT',url=invite)
+                    embed.set_author(name='EC BOT',url=invite, icon_url = img)
                     await bot.send_message(bot.get_channel(verify[user][3]), embed=embed)
                     del verify[user]
         await asyncio.sleep(60)
@@ -112,7 +112,7 @@ async def on_ready():
 
 @bot.command(pass_context=True)
 async def version(ctx):
-    embed = discord.Embed(title='**Current version**', description='<{}!'.format(ver),
+    embed = discord.Embed(title='**Current version**', description='{}!'.format(ver),
                           color=discord.Color.blue())
     embed.set_footer(text=foot)
     embed.set_author(name='EC BOT', url=invite, icon_url=img)
@@ -161,7 +161,7 @@ async def rating(ctx, user = None):
             embed = discord.Embed(title='**RATING CARD**', description='Rating from Code Chef', color=int(rcolor,16))
             embed.add_field(name='USER', value='{}'.format(user), inline=True)
             embed.add_field(name='RATING', value='{}'.format(rating), inline=True)
-            embed.add_field(name='STARS', value='{} :star: '.format(rating2star(rating)), inline=True)
+            embed.add_field(name='STARS', value='{}'.format(rating2star(rating)), inline=True)
         else:
             embed = discord.Embed(title='**FAILED TO GET RATING**',
                                   description='*Something stopped me from getting the rating!*',
@@ -244,20 +244,20 @@ async def drating(ctx, user = None):
 
         embed.set_footer(text=foot)
         embed.set_author(name='EC BOT',
-                         url=invite)
+                         url=invite, icon_url = img)
         await bot.say(embed=embed)
 
 
 @bot.command(pass_context=True)
 async def commands(ctx):
     embed=discord.Embed(title="**COMMANDS**", description="*A list of commands the bot currently supports*", color=0xc016d3)
-    embed.set_author(name="EC BOT",url=invite)
+    embed.set_author(name="EC BOT",url=invite, icon_url = img)
     embed.add_field(name='!ping', value='Replies with pong if its working', inline=False)
     embed.add_field(name='!cookie [user]', value='Sends a cookie to [user]', inline=False)
     embed.add_field(name='!link [codechef username]', value='Will link the given code chef username to your discord id', inline=False)
     embed.add_field(name='!drating [user]', value='Gives you the rating of [user] is he/she has linked their codechef to discord', inline=True)
     embed.add_field(name='!rating [codechef username]', value='Gives you the rating of  [codechef username] directly from the website', inline=True)
-    embed.set_footer(text="Type !commands for a list of commands!")
+    embed.set_footer(text=foot)
     await bot.say(embed=embed)
 
 @bot.command(pass_context=True)
@@ -265,7 +265,7 @@ async def todo(ctx,*message):
     uid = ctx.message.author.id
     embed = discord.Embed(title="**To Do List**", description="*A list of you need to do!*",
                           color=0xc016d3)
-    embed.set_author(name="EC BOT", url=invite)
+    embed.set_author(name="EC BOT", url=invite, icon_url = img)
     if len(message) == 0:
         tasks = sql.gettodo(uid)
         if len(tasks) == 0:
@@ -275,7 +275,7 @@ async def todo(ctx,*message):
     else:
         sql.addtodo(uid,message)
         embed.add_field(name='Task added', value='{}'.format(' '.join(message)))
-    embed.set_footer(text="Type !commands for a list of commands!")
+    embed.set_footer(text=foot)
     await bot.say(embed=embed)
 
 
