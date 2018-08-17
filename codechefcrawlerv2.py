@@ -40,6 +40,7 @@ def live_contest():
     for i in range(len(soup)):
      soup[i] = soup[i].find_all('tr')[1:]
     present = len(soup[0])
+    upcoming = len(soup[1])
     x = []
     y = []
     q = []
@@ -55,7 +56,7 @@ def live_contest():
 
     for i in range(len(q)):
         w.append([q[i][0][0], re.findall('">(.*?)</a>', str(q[i][1][0]))[0], re.findall('<a href="(.*?)"', str(q[i][1][0]))[0],q[i][2][0],q[i][2][2],q[i][3][0],q[i][3][2]])
-    return w, present
+    return w, present , upcoming
 
 
 def verify_user(user):

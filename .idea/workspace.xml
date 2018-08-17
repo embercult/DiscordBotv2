@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="555fd309-8c95-4cc3-8f8a-810489eee87e" name="Default Changelist" comment="">
+    <list default="true" id="555fd309-8c95-4cc3-8f8a-810489eee87e" name="Default Changelist" comment="Added dropbox support?">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainBotv2.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainBotv2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codechefcrawlerv2.py" beforeDir="false" afterPath="$PROJECT_DIR$/codechefcrawlerv2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlitedb.py" beforeDir="false" afterPath="$PROJECT_DIR$/sqlitedb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdb.sqlite" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,15 +35,15 @@
         <counts>
           <entry key="Procfile" value="1" />
           <entry key="md" value="1" />
-          <entry key="py" value="24" />
-          <entry key="txt" value="2" />
+          <entry key="py" value="25" />
+          <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="24" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Python" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -47,15 +51,15 @@
           <entry key="Procfile" value="2" />
           <entry key="Python Console" value="71" />
           <entry key="md" value="137" />
-          <entry key="py" value="18501" />
-          <entry key="txt" value="670" />
+          <entry key="py" value="18826" />
+          <entry key="txt" value="747" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="137" />
-          <entry key="PLAIN_TEXT" value="672" />
-          <entry key="Python" value="18572" />
+          <entry key="PLAIN_TEXT" value="749" />
+          <entry key="Python" value="18897" />
         </counts>
       </usages-collector>
     </session>
@@ -65,11 +69,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MainBotv2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="260" column="31" selection-start-line="260" selection-start-column="31" selection-end-line="260" selection-end-column="31" />
+            <state relative-caret-position="206">
+              <caret line="319" selection-start-line="319" selection-end-line="319" selection-end-column="39" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
                 <element signature="e#686#1067#0" />
@@ -83,9 +87,39 @@
                 <element signature="e#7255#9259#0" />
                 <element signature="e#9322#9428#0" />
                 <element signature="e#9504#11011#0" />
-                <marker date="1534499556614" expanded="true" signature="12950:15043" ph="..." />
-                <marker date="1534499556614" expanded="true" signature="13102:15043" ph="..." />
+                <element signature="e#11075#11930#0" />
+                <marker date="1534514944048" expanded="true" signature="12947:15172" ph="..." />
+                <marker date="1534514944048" expanded="true" signature="13099:15172" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sqlitedb.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="36" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+                <marker date="1534519278889" expanded="true" signature="145:147" ph="..." />
+                <marker date="1534519278889" expanded="true" signature="159:164" ph="..." />
+                <marker date="1534519278889" expanded="true" signature="431:581" ph="..." />
+                <marker date="1534519278889" expanded="true" signature="603:608" ph="..." />
+                <marker date="1534519278889" expanded="true" signature="962:1140" ph="..." />
+                <marker date="1534519278889" expanded="false" signature="1375:1380" ph="..." />
+                <marker date="1534519278889" expanded="true" signature="1636:1819" ph="..." />
+                <marker date="1534519278889" expanded="true" signature="2141:2145" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -93,11 +127,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/codechefcrawlerv2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+            <state relative-caret-position="680">
+              <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
               <folding>
                 <element signature="e#1076#1163#0" />
-                <marker date="1534497032245" expanded="true" signature="1067:1855" ph="..." />
+                <marker date="1534504708385" expanded="true" signature="1067:1894" ph="..." />
               </folding>
             </state>
           </provider>
@@ -106,8 +140,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+            <state relative-caret-position="51">
+              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -162,12 +196,12 @@
         <option value="$PROJECT_DIR$/justtest.py" />
         <option value="$PROJECT_DIR$/codechefcrawler.py" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/sqlitedb.py" />
         <option value="$PROJECT_DIR$/codechefcrawlerv2.py" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/MainBotv2.py" />
+        <option value="$PROJECT_DIR$/sqlitedb.py" />
       </list>
     </option>
   </component>
@@ -535,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534499004723</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="updated new commands in !commands">
+      <created>1534499573303</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1534499573303</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -543,7 +584,7 @@
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48630136" visible="true" weight="0.24330357" />
-      <window_info id="Structure" order="1" sideWeight="0.51369864" side_tool="true" visible="true" weight="0.24330357" />
+      <window_info id="Structure" order="1" sideWeight="0.51369864" side_tool="true" weight="0.24330357" />
       <window_info id="Favorites" order="2" sideWeight="0.5022936" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32923076" />
@@ -598,7 +639,8 @@
     <MESSAGE value="fixed a stupid mistake" />
     <MESSAGE value="fixed yet another mistake" />
     <MESSAGE value="added live contest command\&#10;bot version 2.2.7" />
-    <option name="LAST_COMMIT_MESSAGE" value="added live contest command\&#10;bot version 2.2.7" />
+    <MESSAGE value="updated new commands in !commands" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated new commands in !commands" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/sqlitedb.py" />
@@ -648,27 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sqlitedb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
-          <folding>
-            <marker date="1534365352309" expanded="true" signature="143:162" ph="..." />
-            <marker date="1534365352309" expanded="true" signature="543:721" ph="..." />
-            <marker date="1534365352309" expanded="false" signature="956:961" ph="..." />
-            <marker date="1534365352309" expanded="true" signature="1217:1400" ph="..." />
-            <marker date="1534365352309" expanded="true" signature="1722:1726" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/discord/embeds.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-13">
@@ -678,26 +699,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        <state relative-caret-position="51">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/codechefcrawlerv2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+        <state relative-caret-position="680">
+          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
           <folding>
             <element signature="e#1076#1163#0" />
-            <marker date="1534497032245" expanded="true" signature="1067:1855" ph="..." />
+            <marker date="1534504708385" expanded="true" signature="1067:1894" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MainBotv2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="260" column="31" selection-start-line="260" selection-start-column="31" selection-end-line="260" selection-end-column="31" />
+        <state relative-caret-position="206">
+          <caret line="319" selection-start-line="319" selection-end-line="319" selection-end-column="39" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
             <element signature="e#686#1067#0" />
@@ -711,8 +732,34 @@
             <element signature="e#7255#9259#0" />
             <element signature="e#9322#9428#0" />
             <element signature="e#9504#11011#0" />
-            <marker date="1534499556614" expanded="true" signature="12950:15043" ph="..." />
-            <marker date="1534499556614" expanded="true" signature="13102:15043" ph="..." />
+            <element signature="e#11075#11930#0" />
+            <marker date="1534514944048" expanded="true" signature="12947:15172" ph="..." />
+            <marker date="1534514944048" expanded="true" signature="13099:15172" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqlitedb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1534519278889" expanded="true" signature="145:147" ph="..." />
+            <marker date="1534519278889" expanded="true" signature="159:164" ph="..." />
+            <marker date="1534519278889" expanded="true" signature="431:581" ph="..." />
+            <marker date="1534519278889" expanded="true" signature="603:608" ph="..." />
+            <marker date="1534519278889" expanded="true" signature="962:1140" ph="..." />
+            <marker date="1534519278889" expanded="false" signature="1375:1380" ph="..." />
+            <marker date="1534519278889" expanded="true" signature="1636:1819" ph="..." />
+            <marker date="1534519278889" expanded="true" signature="2141:2145" ph="..." />
           </folding>
         </state>
       </provider>

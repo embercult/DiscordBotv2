@@ -264,6 +264,7 @@ async def commands(ctx):
     embed.set_footer(text=foot)
     await bot.say(embed=embed)
 
+
 @bot.command(pass_context=True)
 async def todo(ctx,*message):
     uid = ctx.message.author.id
@@ -275,7 +276,7 @@ async def todo(ctx,*message):
         if len(tasks) == 0:
             embed.add_field(name='Empty list!',value='Add some items to your todo list now!')
         for i in range(len(tasks)):
-            embed.add_field(name='Task#{}'.format(i+1), value='{}'.format(' '.join(tasks[i])))
+            embed.add_field(name='Task#{}'.format(i+1), value='{}'.format(tasks[i][0][0]))
     else:
         sql.addtodo(uid,message)
         embed.add_field(name='Task added', value='{}'.format(' '.join(message)))
@@ -290,6 +291,9 @@ async def contest(ctx):
                           color=0xc016d3)
     contests = cc.live_contest()
     present = contests[1]
+    print (len(contests[0][present:]))
+    print(len(contests[0]))
+    print(contests[0][present:])
     # code , name , link , start date , start time , end date , end time
     embed2 = discord.Embed(title='**PRESENT CONTESTS**', description='*Currently running code chef contests!*' ,color=discord.Colour.dark_green())
     for i in range(len(contests[0][:present])):
@@ -301,10 +305,10 @@ async def contest(ctx):
     embed3= discord.Embed(title='**UPCOMING CONTESTS**', description='*Code chef contests coming soon!*', color=discord.Colour.dark_orange() )
     for i in range(len(contests[0][present:])):
         embed3.add_field(name='{} - {}'.format(contests[0][i][0], contests[0][i][1]),
-                        value='*Contest will start on {} {} and will end on {} {}*'.format(contests[0][i][4],
-                                                                                         contests[0][i][3],
-                                                                                         contests[0][i][6],
-                                                                                         contests[0][i][5]), inline=False)
+                        value='*Contest will start on {} {} and will end on {} {}*'.format(contests[0][i+present][4],
+                                                                                         contests[0][i+present][3],
+                                                                                         contests[0][i+present][6],
+                                                                                         contests[0][i+present][5]), inline=False)
 
     embed3.set_footer(text=foot)
     embed1.set_author(name="EC BOT", url=invite, icon_url=img)
