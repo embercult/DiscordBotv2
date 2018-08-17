@@ -10,8 +10,11 @@ def copen():
     global conn
     global cur
     try:
+        print('trying to get stuff from the local database')
         conn = sqlite3.connect('userdb.sqlite')
+
     except:
+        print('trying to get stuff from dropbox then')
         dbx.files_download_to_file('userdb.sqlite', '/userdb.sqlite')
         conn = sqlite3.connect('userdb.sqlite')
     # try:

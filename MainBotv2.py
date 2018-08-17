@@ -13,7 +13,7 @@ bot = commands.Bot(command_prefix="!")
 
 
 # Some variables
-ver = 'v0.2.2.7'
+ver = 'v0.2.3.1'
 invite = 'https://discordapp.com/oauth2/authorize?&client_id=477512556630507530&scope=bot&permissions=0'
 img = 'https://i.imgur.com/GX02jaL.png'
 foot = 'For a list of commands tpye "!commands"'
@@ -276,7 +276,11 @@ async def todo(ctx,*message):
         if len(tasks) == 0:
             embed.add_field(name='Empty list!',value='Add some items to your todo list now!')
         for i in range(len(tasks)):
-            embed.add_field(name='Task#{}'.format(i+1), value='{}'.format(tasks[i][0][0]))
+            this = tasks[i][0][1:]
+            this = this[-1:]
+            this = this.split(',')
+            this = this.strip("'")
+            embed.add_field(name='Task#{}'.format(i+1), value='{}'.format(this))
     else:
         sql.addtodo(uid,message)
         embed.add_field(name='Task added', value='{}'.format(' '.join(message)))
