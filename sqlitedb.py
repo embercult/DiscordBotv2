@@ -9,7 +9,11 @@ dbx.users_get_current_account()
 def copen():
     global conn
     global cur
-    dbx.files_download_to_file('userdb.sqlite', '/userdb.sqlite')
+    try:
+        conn = sqlite3.connect('userdb.sqlite')
+    except:
+        dbx.files_download_to_file('userdb.sqlite', '/userdb.sqlite')
+        conn = sqlite3.connect('userdb.sqlite')
     # try:
     conn = sqlite3.connect('userdb.sqlite')
     # except:
