@@ -158,7 +158,7 @@ async def rating(ctx, user = None):
         rating = cc.user_rating(user)
         if rating:
             rcolor = '0x00' + star2color(rating2star(rating))
-            embed = discord.Embed(title='**RATING CARD**', description='Rating from Code Chef', color=int(rcolor,16),icon_url = )
+            embed = discord.Embed(title='**RATING CARD**', description='Rating from Code Chef', color=int(rcolor,16))
             embed.add_field(name='USER', value='{}'.format(user), inline=True)
             embed.add_field(name='RATING', value='{}'.format(rating), inline=True)
             embed.add_field(name='STARS', value='{} :star: '.format(rating2star(rating)), inline=True)
