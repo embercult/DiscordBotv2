@@ -257,6 +257,10 @@ async def commands(ctx):
     embed.add_field(name='!link [codechef username]', value='Will link the given code chef username to your discord id', inline=False)
     embed.add_field(name='!drating [user]', value='Gives you the rating of [user] is he/she has linked their codechef to discord', inline=True)
     embed.add_field(name='!rating [codechef username]', value='Gives you the rating of  [codechef username] directly from the website', inline=True)
+    embed.add_field(name='!todo [task]', value='Adds task to your todo list', inline=False)
+    embed.add_field(name='!todo', value='Displays your todo list', inline=False)
+    embed.add_field(name='!contests', value='Displays the current and upcoming contests on codechef', inline=False)
+
     embed.set_footer(text=foot)
     await bot.say(embed=embed)
 
@@ -281,7 +285,7 @@ async def todo(ctx,*message):
 
 
 @bot.command(pass_context=True)
-async def livecontest(ctx):
+async def contest(ctx):
     embed1 = discord.Embed(title="**CODE CHEF CONTESTS**", description="*A list of up coming and present code chef contest!*",
                           color=0xc016d3)
     contests = cc.live_contest()
