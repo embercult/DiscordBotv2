@@ -13,13 +13,14 @@ bot = commands.Bot(command_prefix="!")
 
 
 # Some variables
+ver = 'v0.2.1'
 invite = 'https://discordapp.com/oauth2/authorize?&client_id=477512556630507530&scope=bot&permissions=0'
 img = 'https://i.imgur.com/GX02jaL.png'
 foot = 'For a list of commands tpye "!commands"'
 ccicon = 'embed.set_thumbnail(url="https://pbs.twimg.com/profile_images/470882849885667329/X48adYnt_400x400.jpeg'
 global verify
 verify = {} # {codechef name : [Time , discord id , discord name , ctx.channel.id]} ##ctx.channel.id to Send message in the same channel if the user is verified (or not)
-stats = ['A bot made by EmberCult','Current version v2.0.1','Say !commands','A bot made by Viplav','Online and ready to use!','Found any error,DM EmberCult!']
+stats = ['A bot made by EmberCult','Current version {}'.format(ver),'Say !commands','A bot made by Viplav','Online and ready to use!','Found any error,DM EmberCult!']
 
 def rating2star(rating):
     star = 0
@@ -109,6 +110,13 @@ async def on_ready():
     print("Lol it actually started!")
 
 
+@bot.command(pass_context=True)
+async def version(ctx):
+    embed = discord.Embed(title='**Current version**', description='<{}!'.format(ver),
+                          color=discord.Color.blue())
+    embed.set_footer(text=foot)
+    embed.set_author(name='EC BOT', url=invite, icon_url=img)
+    await bot.say(embed=embed)
 
 @bot.command(pass_context=True)
 async def ping(ctx):
