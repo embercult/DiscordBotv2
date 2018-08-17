@@ -4,12 +4,19 @@ import asyncio
 import codechefcrawlerv2 as cc
 import sqlitedb as sql
 import datetime
+
 from itertools import cycle
 import os
 
-invite = 'https://discordapp.com/oauth2/authorize?&client_id=477512556630507530&scope=bot&permissions=0'
 
 bot = commands.Bot(command_prefix="!")
+
+
+# Some variables
+invite = 'https://discordapp.com/oauth2/authorize?&client_id=477512556630507530&scope=bot&permissions=0'
+img = 'https://i.imgur.com/GX02jaL.png'
+foot = 'For a list of commands tpye "!commands"'
+ccicon = 'embed.set_thumbnail(url="https://pbs.twimg.com/profile_images/470882849885667329/X48adYnt_400x400.jpeg'
 global verify
 verify = {} # {codechef name : [Time , discord id , discord name , ctx.channel.id]} ##ctx.channel.id to Send message in the same channel if the user is verified (or not)
 stats = ['A bot made by EmberCult','Current version v2','Say !commands','A bot made by Viplav','Online and ready to use!','Found any error,DM EmberCult!']
@@ -76,8 +83,8 @@ async def check():
                 embed.add_field(name='CONGRATS!',
                                 value='Successfully verified your account! {} is linked to your account now!'.format(
                                     user))
-                embed.set_footer(text='Type !commands for a list of commands!')
-                embed.set_author(name='EC BOT', url=invite)
+                embed.set_footer(text=foot)
+                embed.set_author(name='EC BOT', url=invite, icon_url=img)
                 await bot.send_message(bot.get_channel(verify[user][3]), embed=embed)
                 del verify[user]
             else:
@@ -90,7 +97,7 @@ async def check():
                                           color=discord.Color.red())
                     embed.add_field(name='**ERROR**',
                                     value='Failed to verify your account! {} is **NOT** linked to your account!'.format(user))
-                    embed.set_footer(text='Type !commands for a list of commands!')
+                    embed.set_footer(text=foot)
                     embed.set_author(name='EC BOT',url=invite)
                     await bot.send_message(bot.get_channel(verify[user][3]), embed=embed)
                     del verify[user]
@@ -111,14 +118,14 @@ async def ping(ctx):
     lags = str(lags).split(':')[2]
 
     embed = discord.Embed(title='PONG :ping_pong:', description='<@{}>  , took {} secs!'.format(userid, lags), color=discord.Color.blue())
-    embed.set_footer(text='Type !commands for a list of commands!')
-    embed.set_author(name='EC BOT', url=invite)
+    embed.set_footer(text=foot)
+    embed.set_author(name='EC BOT', url=invite, icon_url=img)
     await bot.say(embed=embed)
 
 
 @bot.command(pass_context=True)
 async def cookie(ctx, user = None):
-    embed = discord.Embed(title="COOKIE DELIVERY!", description= ':cookie:' , color=discord.Color.gold())
+    embed = discord.Embed(title="**COOKIE DELIVERY!**", description= '*You received a :cookie:*', color=discord.Color.gold())
     if user == None:
         user = ctx.message.author.id
         embed.add_field(name='FROM', value='The almighty EC himself')
@@ -127,31 +134,36 @@ async def cookie(ctx, user = None):
         giver = ctx.message.author.id
         embed.add_field(name='FROM', value='<@{}>'.format(giver))
         embed.add_field(name='TO', value='{}'.format(user))
-    embed.set_footer(text='Type !commands for a list of commands!')
-    embed.set_author(name='EC BOT', url=invite)
+    embed.set_footer(text=foot)
+    embed.set_author(name='EC BOT', url=invite, icon_url=img)
     await bot.say(embed=embed)
 
 
 @bot.command(pass_context=True)
 async def rating(ctx, user = None):
     if user == None:
-        embed = discord.Embed(title='RATING', description='Rating from Code Chef', color=discord.Color.red())
+        embed = discord.Embed(title='**FAILED TO GET RATING**',
+                              description='*Something stopped me from getting the rating!*',
+                              color=discord.Color.red())
         embed.add_field(name='ERROR', value='Please provide a code chef username!   ')
     else:
         rating = cc.user_rating(user)
         if rating:
             rcolor = '0x00' + star2color(rating2star(rating))
-            embed = discord.Embed(title='RATING', description='Rating from Code Chef', color=int(rcolor,16))
+            embed = discord.Embed(title='**RATING CARD**', description='Rating from Code Chef', color=int(rcolor,16),icon_url = )
             embed.add_field(name='USER', value='{}'.format(user), inline=True)
             embed.add_field(name='RATING', value='{}'.format(rating), inline=True)
-            embed.add_field(name='STARS', value='{}'.format(rating2star(rating)), inline=True)
+            embed.add_field(name='STARS', value='{} :star: '.format(rating2star(rating)), inline=True)
         else:
-            embed = discord.Embed(title='RATING', description='Rating from Code Chef', color=discord.Color.red())
+            embed = discord.Embed(title='**FAILED TO GET RATING**',
+                                  description='*Something stopped me from getting the rating!*',
+                                  color=discord.Color.red())
             embed.add_field(name='ERROR', value='No such user found!')
 
-    embed.set_footer(text='Type !commands for a list of commands!')
+    embed.set_footer(text=foot)
+    embed.set_thumbnail(url=ccicon)
     embed.set_author(name='EC BOT',
-                     url=invite)
+                     url=invite, icon_url = img)
     await bot.say(embed = embed)
 
 
@@ -161,7 +173,7 @@ async def link(ctx, user=None):
     sender_id = ctx.message.author.id
     time = ctx.message.timestamp
     if user == None:
-        embed = discord.Embed(title='**LINK**', description='*Links your codechef and discord ids*', color=discord.Color.red())
+        embed = discord.Embed(title='**FAILED TO LINK**', description='*Something stopped me from linking your codechef to your discord*', color=discord.Color.red())
         embed.add_field(name='ERROR', value='Please provide a code chef username!   ')
     else:
         if user in verify:
@@ -186,9 +198,9 @@ async def link(ctx, user=None):
                 embed = discord.Embed(title='**VERIFYING**', description='**Links your codechef and discord ids**', color=discord.Color.red())
                 embed.add_field(name='ERROR', value='No such user found!')
 
-    embed.set_footer(text='Type !commands for a list of commands!')
+    embed.set_footer(text=foot)
     embed.set_author(name='EC BOT',
-                     url=invite)
+                     url=invite, icon_url = img)
 
     await bot.say(embed=embed)
 
@@ -222,7 +234,7 @@ async def drating(ctx, user = None):
             embed.add_field(name='ERROR', value='No such user found in database!')
             embed.add_field(name='How to add to database?', value='Use the !link command to add to database!')
 
-        embed.set_footer(text='Type !commands for a list of commands!')
+        embed.set_footer(text=foot)
         embed.set_author(name='EC BOT',
                          url=invite)
         await bot.say(embed=embed)
