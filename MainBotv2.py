@@ -19,7 +19,7 @@ foot = 'For a list of commands tpye "!commands"'
 ccicon = 'embed.set_thumbnail(url="https://pbs.twimg.com/profile_images/470882849885667329/X48adYnt_400x400.jpeg'
 global verify
 verify = {} # {codechef name : [Time , discord id , discord name , ctx.channel.id]} ##ctx.channel.id to Send message in the same channel if the user is verified (or not)
-stats = ['A bot made by EmberCult','Current version v2','Say !commands','A bot made by Viplav','Online and ready to use!','Found any error,DM EmberCult!']
+stats = ['A bot made by EmberCult','Current version v2.0.1','Say !commands','A bot made by Viplav','Online and ready to use!','Found any error,DM EmberCult!']
 
 def rating2star(rating):
     star = 0
