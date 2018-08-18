@@ -56,6 +56,7 @@ def deltodo(uid):
     createtabletodo()
     copen()
     cur.execute("DELETE FROM todo WHERE did LIKE ? ",(uid,)).fetchall()
+    conn.commit()
     cclose()
 
 def createtableuserdb():
