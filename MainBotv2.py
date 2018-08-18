@@ -16,7 +16,7 @@ bot = commands.Bot(command_prefix="!")
 ver = 'v0.2.3.9'
 invite = 'https://discordapp.com/oauth2/authorize?&client_id=477512556630507530&scope=bot&permissions=0'
 img = 'https://i.imgur.com/GX02jaL.png'
-foot = 'For a list of commands tpye "!commands"'
+foot = 'For a list of commands tpye "!commands"         Current bot version:{}'.format(ver)
 ccicon = 'https://pbs.twimg.com/profile_images/470882849885667329/X48adYnt_400x400.jpeg'
 global verify
 verify = {} # {codechef name : [Time , discord id , discord name , ctx.channel.id]} ##ctx.channel.id to Send message in the same channel if the user is verified (or not)
