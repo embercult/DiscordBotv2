@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="555fd309-8c95-4cc3-8f8a-810489eee87e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainBotv2.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainBotv2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +47,7 @@
           <entry key="Procfile" value="2" />
           <entry key="Python Console" value="71" />
           <entry key="md" value="137" />
-          <entry key="py" value="19428" />
+          <entry key="py" value="19457" />
           <entry key="txt" value="802" />
         </counts>
       </usages-collector>
@@ -55,7 +55,7 @@
         <counts>
           <entry key="Markdown" value="137" />
           <entry key="PLAIN_TEXT" value="804" />
-          <entry key="Python" value="19499" />
+          <entry key="Python" value="19528" />
         </counts>
       </usages-collector>
     </session>
@@ -68,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MainBotv2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2022">
-              <caret line="281" column="13" selection-start-line="281" selection-start-column="13" selection-end-line="281" selection-end-column="13" />
+            <state relative-caret-position="223">
+              <caret line="279" column="81" selection-start-line="279" selection-start-column="81" selection-end-line="279" selection-end-column="81" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -80,12 +80,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sqlitedb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1036">
-              <caret line="101" column="47" selection-start-line="101" selection-start-column="42" selection-end-line="101" selection-end-column="47" />
+            <state relative-caret-position="221">
+              <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-                <marker date="1534572353163" expanded="true" signature="229:231" ph="..." />
-                <marker date="1534572353163" expanded="true" signature="243:248" ph="..." />
+                <marker date="1534572523348" expanded="true" signature="169:171" ph="..." />
+                <marker date="1534572523348" expanded="true" signature="183:188" ph="..." />
               </folding>
             </state>
           </provider>
@@ -174,10 +174,10 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/codechefcrawlerv2.py" />
-        <option value="$PROJECT_DIR$/MainBotv2.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/sqlitedb.py" />
+        <option value="$PROJECT_DIR$/MainBotv2.py" />
       </list>
     </option>
   </component>
@@ -580,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534572470389</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="fixing dropboxw">
+      <created>1534572536541</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1534572536541</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -730,20 +737,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sqlitedb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1036">
-          <caret line="101" column="47" selection-start-line="101" selection-start-column="42" selection-end-line="101" selection-end-column="47" />
+        <state relative-caret-position="221">
+          <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1534572353163" expanded="true" signature="229:231" ph="..." />
-            <marker date="1534572353163" expanded="true" signature="243:248" ph="..." />
+            <marker date="1534572523348" expanded="true" signature="169:171" ph="..." />
+            <marker date="1534572523348" expanded="true" signature="183:188" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MainBotv2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2022">
-          <caret line="281" column="13" selection-start-line="281" selection-start-column="13" selection-end-line="281" selection-end-column="13" />
+        <state relative-caret-position="223">
+          <caret line="279" column="81" selection-start-line="279" selection-start-column="81" selection-end-line="279" selection-end-column="81" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>

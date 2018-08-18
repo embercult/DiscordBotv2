@@ -13,7 +13,7 @@ bot = commands.Bot(command_prefix="!")
 
 
 # Some variables
-ver = 'v0.2.3.1'
+ver = 'v0.2.3.4'
 invite = 'https://discordapp.com/oauth2/authorize?&client_id=477512556630507530&scope=bot&permissions=0'
 img = 'https://i.imgur.com/GX02jaL.png'
 foot = 'For a list of commands tpye "!commands"'
@@ -279,7 +279,7 @@ async def todo(ctx,*message):
             #this = list(map(this.strip("'"), this[0]))
             embed.add_field(name='Task#{}'.format(i+1), value='{}'.format(tasks[i]))
     else:
-        sql.addtodo(uid,message)
+        sql.addtodo(uid, ' '.join(message))
         embed.add_field(name='Task added', value='{}'.format(' '.join(message)))
     embed.set_footer(text=foot)
     embed.set_author(name="EC BOT", url=invite, icon_url=img)
