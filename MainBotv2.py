@@ -277,7 +277,7 @@ async def todo(ctx,*message):
             embed.add_field(name='Empty list!',value='Add some items to your todo list now!')
         for i in range(len(tasks)):
             #this = list(map(this.strip("'"), this[0]))
-            embed.add_field(name='Task#{}'.format(i+1), value='{}'.format(tasks[i]))
+            embed.add_field(name='Task#{}'.format(i+1), value='{}'.format(tasks[i][0]))
     else:
         sql.addtodo(uid, ' '.join(message))
         embed.add_field(name='Task added', value='{}'.format(' '.join(message)))
