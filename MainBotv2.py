@@ -276,11 +276,8 @@ async def todo(ctx,*message):
         if len(tasks) == 0:
             embed.add_field(name='Empty list!',value='Add some items to your todo list now!')
         for i in range(len(tasks)):
-            this = tasks[i][0][1:]
-            this = this[-1:]
-            this = this.split(',')
             #this = list(map(this.strip("'"), this[0]))
-            embed.add_field(name='Task#{}'.format(i+1), value='{}'.format(this))
+            embed.add_field(name='Task#{}'.format(i+1), value='{}'.format(tasks[i]))
     else:
         sql.addtodo(uid,message)
         embed.add_field(name='Task added', value='{}'.format(' '.join(message)))
@@ -324,4 +321,4 @@ async def contest(ctx):
 token = str(os.environ.get('TOKEN', 3))
 bot.loop.create_task(check())
 bot.loop.create_task(status())
-bot.run(token)
+bot.run('NDc3NTEyNTU2NjMwNTA3NTMw.DliIIw.-atLjMFoO_Bscij9kMVnR3uujNo')
