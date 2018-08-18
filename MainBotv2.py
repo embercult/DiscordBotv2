@@ -324,4 +324,4 @@ async def contest(ctx):
 token = str(os.environ.get('TOKEN', 3))
 bot.loop.create_task(check())
 bot.loop.create_task(status())
-bot.run('NDc3NTEyNTU2NjMwNTA3NTMw.DliIIw.-atLjMFoO_Bscij9kMVnR3uujNo')
+bot.run(token)
