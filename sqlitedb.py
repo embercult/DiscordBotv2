@@ -52,6 +52,11 @@ def gettodo(uid):
     except IndexError:
         return False
 
+def deltodo(uid):
+    createtabletodo()
+    copen()
+    cur.execute("DELETE FROM todo WHERE did LIKE ? ",(uid,)).fetchall()
+    cclose()
 
 def createtableuserdb():
     copen()

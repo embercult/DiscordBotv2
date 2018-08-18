@@ -285,6 +285,15 @@ async def todo(ctx,*message):
     embed.set_author(name="EC BOT", url=invite, icon_url=img)
     await bot.say(embed=embed)
 
+@bot.command(pass_context=True)
+async def clrtodo(ctx):
+    uid = ctx.message.author.id
+    sql.deltodo(uid)
+    embed = discord.Embed(title="**To Do List Cleared**", description="*All items from your todo list have been removed!*",
+                          color=0xc016d3)
+    embed.set_footer(text=foot)
+    embed.set_author(name="EC BOT", url=invite, icon_url=img)
+    await bot.say(embed=embed)
 
 @bot.command(pass_context=True)
 async def contest(ctx):
