@@ -16,7 +16,7 @@ bot = commands.Bot(command_prefix="!")
 ver = 'v0.2.3.9'
 invite = 'https://discordapp.com/oauth2/authorize?&client_id=477512556630507530&scope=bot&permissions=0'
 img = 'https://i.imgur.com/GX02jaL.png'
-foot = 'For a list of commands tpye "!commands"         Current bot version:{}'.format(ver)
+foot = 'For a list of commands tpye "!commands"_-_-_-_-_-_-_-_-_-_Current bot version:{}'.format(ver)
 ccicon = 'https://pbs.twimg.com/profile_images/470882849885667329/X48adYnt_400x400.jpeg'
 global verify
 verify = {} # {codechef name : [Time , discord id , discord name , ctx.channel.id]} ##ctx.channel.id to Send message in the same channel if the user is verified (or not)
@@ -308,16 +308,16 @@ async def contest(ctx):
     embed2 = discord.Embed(title='**PRESENT CONTESTS**', description='*Currently running code chef contests!*' ,color=discord.Colour.dark_green())
     for i in range(len(contests[0][:present])):
         embed2.add_field(name='{} - {}'.format(contests[0][i][0], contests[0][i][1]),
-                        value='*Contest started on {} {} and will end on {} {}*'.format(contests[0][i][4],
+                        value='*Contest started on {} {} and will end on {} {}*'.format(contests[0][i][4][:5],
                                                                                       contests[0][i][3],
-                                                                                      contests[0][i][6],
+                                                                                      contests[0][i][6][:5],
                                                                                       contests[0][i][5]), inline=False)
     embed3= discord.Embed(title='**UPCOMING CONTESTS**', description='*Code chef contests coming soon!*', color=discord.Colour.dark_orange() )
     for i in range(len(contests[0][present:])):
         embed3.add_field(name='{} - {}'.format(contests[0][i][0], contests[0][i][1]),
-                        value='*Contest will start on {} {} and will end on {} {}*'.format(contests[0][i+present][4],
+                        value='*Contest will start on {} {} and will end on {} {}*'.format(contests[0][i+present][4][:5],
                                                                                          contests[0][i+present][3],
-                                                                                         contests[0][i+present][6],
+                                                                                         contests[0][i+present][6][:5],
                                                                                          contests[0][i+present][5]), inline=False)
 
     embed3.set_footer(text=foot)
