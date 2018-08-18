@@ -1,25 +1,20 @@
 import sqlite3
 import dropbox
 import os
+from struct import pack
 token1 = str(os.environ.get('TOKENDB', 3))
-dbx = dropbox.Dropbox(token1)
+dbx = dropbox.Dropbox('gyzZwbGXeIAAAAAAAAAAIOWrA-kZhvY1eNm24MUFhsfT74Xq3oudpgpDNE-KIElp')
 dbx.users_get_current_account()
 
 
 def copen():
     global conn
     global cur
-    try:
-        print('trying to get stuff from the local database')
-        conn = sqlite3.connect('userdb.sqlite')
-
-    except:
-        print('trying to get stuff from dropbox then')
-        dbx.files_download_to_file('userdb.sqlite', '/userdb.sqlite')
-        conn = sqlite3.connect('userdb.sqlite')
-    # try:
+    print('trying to get stuff from dropbox then')
+    dbx.files_download_to_file('userdb.sqlite','/userdb.sqlite')
+    #parsed = parser.from_buffer(file_contents)
+    # try:w
     conn = sqlite3.connect('userdb.sqlite')
-    # except:
     #     conn = sqlite3.connect('userdb.sqlite')
     cur = conn.cursor()
 

@@ -279,7 +279,7 @@ async def todo(ctx,*message):
             this = tasks[i][0][1:]
             this = this[-1:]
             this = this.split(',')
-            this = this.strip("'")
+            #this = list(map(this.strip("'"), this[0]))
             embed.add_field(name='Task#{}'.format(i+1), value='{}'.format(this))
     else:
         sql.addtodo(uid,message)
@@ -324,4 +324,4 @@ async def contest(ctx):
 token = str(os.environ.get('TOKEN', 3))
 bot.loop.create_task(check())
 bot.loop.create_task(status())
-bot.run('NDc3NTEyNTU2NjMwNTA3NTMw.DlgleA.l_S1JrnvWLD-Qb2_G3zP2NS8UqI')
+bot.run('NDc3NTEyNTU2NjMwNTA3NTMw.DliIIw.-atLjMFoO_Bscij9kMVnR3uujNo')
