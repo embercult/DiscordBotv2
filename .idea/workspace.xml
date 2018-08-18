@@ -47,15 +47,15 @@
           <entry key="Procfile" value="2" />
           <entry key="Python Console" value="71" />
           <entry key="md" value="137" />
-          <entry key="py" value="19457" />
-          <entry key="txt" value="802" />
+          <entry key="py" value="19466" />
+          <entry key="txt" value="840" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="137" />
-          <entry key="PLAIN_TEXT" value="804" />
-          <entry key="Python" value="19528" />
+          <entry key="PLAIN_TEXT" value="842" />
+          <entry key="Python" value="19537" />
         </counts>
       </usages-collector>
     </session>
@@ -69,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/MainBotv2.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="223">
-              <caret line="279" column="81" selection-start-line="279" selection-start-column="81" selection-end-line="279" selection-end-column="81" />
+              <caret line="279" column="84" selection-start-line="279" selection-start-column="84" selection-end-line="279" selection-end-column="84" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -587,7 +587,28 @@
       <option name="project" value="LOCAL" />
       <updated>1534572536541</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="rip todo">
+      <created>1534572764475</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1534572764475</updated>
+    </task>
+    <task id="LOCAL-00032" summary="rip todo">
+      <created>1534572811352</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1534572811352</updated>
+    </task>
+    <task id="LOCAL-00033" summary="i keep pushing token lol">
+      <created>1534572843828</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1534572843828</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -654,7 +675,9 @@
     <MESSAGE value="Added dropbox support?" />
     <MESSAGE value="fixed the todo maybe??" />
     <MESSAGE value="fixing dropboxw" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing dropboxw" />
+    <MESSAGE value="rip todo" />
+    <MESSAGE value="i keep pushing token lol" />
+    <option name="LAST_COMMIT_MESSAGE" value="i keep pushing token lol" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/sqlitedb.py" />
@@ -750,7 +773,7 @@
     <entry file="file://$PROJECT_DIR$/MainBotv2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
-          <caret line="279" column="81" selection-start-line="279" selection-start-column="81" selection-end-line="279" selection-end-column="81" />
+          <caret line="279" column="84" selection-start-line="279" selection-start-column="84" selection-end-line="279" selection-end-column="84" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
