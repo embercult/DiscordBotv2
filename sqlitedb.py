@@ -68,8 +68,9 @@ def createtableuserdb():
 
 
 def adduser(did, dname, usern, rating):
-    copen()
+
     createtableuserdb()
+    copen()
     cur.execute('''INSERT OR REPLACE INTO Users (did, dname, usern, rating)
                     VALUES (?, ?, ?, ?)''', (str(did), str(dname), str(usern), int(rating)))
     conn.commit()
