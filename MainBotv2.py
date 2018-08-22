@@ -306,8 +306,8 @@ async def contest(ctx):
     print(contests[0][present:])
     # code , name , link , start date , start time , end date , end time
     embed2 = discord.Embed(title='**PRESENT CONTESTS**', description='*Currently running code chef contests!*' ,color=discord.Colour.dark_green())
-    for i in range(len(contests[0][:present])):
-        i += present
+    for i in range(present, len(contests[0][:present]) + present):
+
         embed2.add_field(name='{} - {}'.format(contests[0][i][0], contests[0][i][1]),
                         value='Contest started on {} {} and will end on {} {}'.format(contests[0][i][4][:6],
                                                                                       contests[0][i][3],
