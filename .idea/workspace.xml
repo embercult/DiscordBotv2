@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="555fd309-8c95-4cc3-8f8a-810489eee87e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainBotv2.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainBotv2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,7 +15,7 @@
     <session id="-2144607728">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.16" value="1" />
@@ -25,8 +26,9 @@
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.49" value="2" />
           <entry key="project.open.time.57" value="1" />
+          <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -49,15 +51,15 @@
           <entry key="Procfile" value="2" />
           <entry key="Python Console" value="219" />
           <entry key="md" value="137" />
-          <entry key="py" value="19818" />
-          <entry key="txt" value="1086" />
+          <entry key="py" value="19877" />
+          <entry key="txt" value="1140" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="137" />
-          <entry key="PLAIN_TEXT" value="1088" />
-          <entry key="Python" value="20037" />
+          <entry key="PLAIN_TEXT" value="1142" />
+          <entry key="Python" value="20096" />
         </counts>
       </usages-collector>
     </session>
@@ -70,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MainBotv2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="309" column="18" selection-start-line="309" selection-start-column="18" selection-end-line="309" selection-end-column="18" />
+            <state relative-caret-position="187">
+              <caret line="22" column="192" selection-start-line="22" selection-start-column="192" selection-end-line="22" selection-end-column="192" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -82,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="68">
+              <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -378,34 +380,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534090457079</updated>
-    </task>
-    <task id="LOCAL-00002" summary="added !commands&#10;and i dont like dem errors so i ma just hiding the errors">
-      <created>1534155684864</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1534155684864</updated>
-    </task>
-    <task id="LOCAL-00003" summary="added !commands&#10;and i dont like dem errors so i ma just hiding the errors">
-      <created>1534157766890</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1534157766890</updated>
-    </task>
-    <task id="LOCAL-00004" summary="added !commands&#10;and i dont like dem errors so i ma just hiding the errors">
-      <created>1534157786371</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1534157786371</updated>
-    </task>
-    <task id="LOCAL-00005" summary="err trying to work out this stuff so its up 24x7 without exposing the token">
-      <created>1534158154985</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1534158154985</updated>
     </task>
     <task id="LOCAL-00006" summary="err trying to work out this stuff so its up 24x7 without exposing the token">
       <created>1534162381802</created>
@@ -722,13 +696,60 @@
       <option name="project" value="LOCAL" />
       <updated>1534926444459</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="contest fixes">
+      <created>1534926677975</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1534926677976</updated>
+    </task>
+    <task id="LOCAL-00052" summary="contest fixes">
+      <created>1534926783330</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1534926783330</updated>
+    </task>
+    <task id="LOCAL-00053" summary="contest fixes">
+      <created>1534926853476</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1534926853477</updated>
+    </task>
+    <task id="LOCAL-00054" summary="99.999% sure fixed the contest">
+      <created>1534927140539</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1534927140539</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48630136" weight="0.24330357" />
+      <window_info id="Structure" order="1" sideWeight="0.51369864" side_tool="true" weight="0.24330357" />
+      <window_info id="Favorites" order="2" sideWeight="0.5022936" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32923076" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49925596" weight="0.32615384" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32923076" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3276923" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32923076" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50074404" side_tool="true" weight="0.3276923" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3276923" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48630136" visible="true" weight="0.24330357" />
       <window_info id="Structure" order="1" sideWeight="0.51369864" side_tool="true" weight="0.24330357" />
       <window_info id="Favorites" order="2" sideWeight="0.5022936" side_tool="true" weight="0.25" />
@@ -746,32 +767,12 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4953846" visible="true" weight="0.24330357" />
-      <window_info id="Structure" order="1" sideWeight="0.50461537" side_tool="true" visible="true" weight="0.24330357" />
-      <window_info id="Favorites" order="2" sideWeight="0.5022936" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32923076" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49925596" weight="0.3276923" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50074404" side_tool="true" weight="0.3276923" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="its sort of broken rn" />
     <MESSAGE value="Ready for heroku use!" />
     <MESSAGE value="fixed ping" />
     <MESSAGE value="filex commands" />
@@ -796,7 +797,8 @@
     <MESSAGE value="minor things" />
     <MESSAGE value="hopefully contest is fixed" />
     <MESSAGE value="contest fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="contest fixes" />
+    <MESSAGE value="99.999% sure fixed the contest" />
+    <option name="LAST_COMMIT_MESSAGE" value="99.999% sure fixed the contest" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/sqlitedb.py" />
@@ -846,6 +848,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MainBotv2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="22" column="192" selection-start-line="22" selection-start-column="192" selection-end-line="22" selection-end-column="192" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sqlitedb.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1173">
@@ -879,23 +898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4828">
           <caret line="287" column="39" selection-start-line="287" selection-start-column="39" selection-end-line="287" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainBotv2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="309" column="18" selection-start-line="309" selection-start-column="18" selection-end-line="309" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
