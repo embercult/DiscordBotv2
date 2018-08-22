@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="555fd309-8c95-4cc3-8f8a-810489eee87e" name="Default Changelist" comment="contest fixes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="555fd309-8c95-4cc3-8f8a-810489eee87e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/MainBotv2.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainBotv2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +49,7 @@
           <entry key="Procfile" value="2" />
           <entry key="Python Console" value="219" />
           <entry key="md" value="137" />
-          <entry key="py" value="19776" />
+          <entry key="py" value="19818" />
           <entry key="txt" value="1086" />
         </counts>
       </usages-collector>
@@ -57,7 +57,7 @@
         <counts>
           <entry key="Markdown" value="137" />
           <entry key="PLAIN_TEXT" value="1088" />
-          <entry key="Python" value="19995" />
+          <entry key="Python" value="20037" />
         </counts>
       </usages-collector>
     </session>
@@ -71,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/MainBotv2.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
-              <caret line="309" column="20" selection-start-line="309" selection-start-column="20" selection-end-line="309" selection-end-column="20" />
+              <caret line="309" column="18" selection-start-line="309" selection-start-column="18" selection-end-line="309" selection-end-column="18" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -378,13 +378,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534090457079</updated>
-    </task>
-    <task id="LOCAL-00001" summary="blah blah">
-      <created>1534150933961</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1534150933961</updated>
     </task>
     <task id="LOCAL-00002" summary="added !commands&#10;and i dont like dem errors so i ma just hiding the errors">
       <created>1534155684864</created>
@@ -722,7 +715,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534926128685</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="contest fixes">
+      <created>1534926444459</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1534926444459</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -794,9 +794,9 @@
     <MESSAGE value="fixed another small bug" />
     <MESSAGE value="added botver to footer" />
     <MESSAGE value="minor things" />
-    <MESSAGE value="contest fixes" />
     <MESSAGE value="hopefully contest is fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="hopefully contest is fixed" />
+    <MESSAGE value="contest fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="contest fixes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/sqlitedb.py" />
@@ -892,7 +892,7 @@
     <entry file="file://$PROJECT_DIR$/MainBotv2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
-          <caret line="309" column="20" selection-start-line="309" selection-start-column="20" selection-end-line="309" selection-end-column="20" />
+          <caret line="309" column="18" selection-start-line="309" selection-start-column="18" selection-end-line="309" selection-end-column="18" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
