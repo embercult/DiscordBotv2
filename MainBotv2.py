@@ -316,10 +316,10 @@ async def contest(ctx):
     embed3= discord.Embed(title='**UPCOMING CONTESTS**', description='*Code chef contests coming soon!*', color=discord.Colour.dark_orange() )
     for i in range(present, len(contests[0][present:]) + present):
         embed3.add_field(name='{} - {}'.format(contests[0][i][0], contests[0][i][1]),
-                        value='Contest will start on {} {} and will end on {} {}'.format(contests[0][i+present][4][:6],
-                                                                                         contests[0][i+present][3],
-                                                                                         contests[0][i+present][6][:6],
-                                                                                         contests[0][i+present][5]), inline=False)
+                        value='Contest will start on {} {} and will end on {} {}'.format(contests[0][i][4][:6],
+                                                                                         contests[0][i][3],
+                                                                                         contests[0][i][6][:6],
+                                                                                         contests[0][i][5]), inline=False)
 
     embed3.set_footer(text=foot)
     embed1.set_author(name="EC BOT", url=invite, icon_url=img)
