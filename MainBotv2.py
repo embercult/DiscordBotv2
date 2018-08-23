@@ -262,7 +262,7 @@ async def commands(ctx):
 
 @commands.command()
 async def ping():
-    embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command",
+    embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command*",
                           color=0xc016d3)
     embed.set_author(name="EC BOT", url=invite, icon_url=img)
     embed.add_field(name="!ping", value="Checks if the bot is online and sends a message back with the respond time")
@@ -272,7 +272,7 @@ async def ping():
 
 @commands.command()
 async def cookie():
-    embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command",
+    embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command*",
                           color=0xc016d3)
     embed.set_author(name="EC BOT", url=invite, icon_url=img)
     embed.add_field(name="!cookie [@user]", value="Sends a warm cookie to the mentioned user")
@@ -282,7 +282,7 @@ async def cookie():
 
 @commands.command()
 async def rating(c):
-    embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command",
+    embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command*",
                           color=0xc016d3)
     embed.set_author(name="EC BOT", url=invite, icon_url=img)
     embed.add_field(name="!rating [codechef name]", value="Tells the rating of [codechef name] from the codechef website")
@@ -292,7 +292,7 @@ async def rating(c):
 
 @commands.command()
 async def link():
-    embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command",
+    embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command*",
                           color=0xc016d3)
     embed.set_author(name="EC BOT", url=invite, icon_url=img)
     embed.add_field(name="!link [codechef name]", value="Will link your discord id with the [codechef name]")
@@ -302,7 +302,7 @@ async def link():
 
 @commands.command()
 async def drating():
-    embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command",
+    embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command*",
                           color=0xc016d3)
     embed.set_author(name="EC BOT", url=invite, icon_url=img)
     embed.add_field(name="!drating [discord name]", value="Will tell the rating of [discord name] if they have linked their codechef\n**NOTE**:*Works with partial names too*")
@@ -312,7 +312,7 @@ async def drating():
 
 @commands.command()
 async def todo():
-    embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command",
+    embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command*",
                           color=0xc016d3)
     embed.set_author(name="EC BOT", url=invite, icon_url=img)
     embed.add_field(name="!todo", value="Will display your todo list")
@@ -324,7 +324,7 @@ async def todo():
 
 @commands.command()
 async def contest():
-    embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command",
+    embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command*",
                           color=0xc016d3)
     embed.set_author(name="EC BOT", url=invite, icon_url=img)
     embed.add_field(name="!contest", value="Displays a list of ongoing and upcoming codechef contests")
