@@ -261,7 +261,7 @@ async def commands(ctx):
 
 
 @commands.command()
-async def ping(ctx):
+async def ping():
     embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command",
                           color=0xc016d3)
     embed.set_author(name="EC BOT", url=invite, icon_url=img)
