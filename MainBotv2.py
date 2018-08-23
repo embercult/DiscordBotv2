@@ -15,7 +15,7 @@ bot = commands.Bot(command_prefix="!")
 
 
 # Some variables
-ver = 'v0.2.4.0'
+ver = 'v0.2.5.0'
 invite = 'https://discordapp.com/oauth2/authorize?&client_id=477512556630507530&scope=bot&permissions=0'
 img = 'https://i.imgur.com/GX02jaL.png'
 foot = 'For a list of commands tpye "!commands"\n{}'.format(ver)
