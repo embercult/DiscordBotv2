@@ -409,7 +409,7 @@ async def updatedb(ctx):
 
 @bot.command(pass_context=True)
 async def gif(ctx,tag):
-    await bot.say(ot.giphy())
+    await bot.say(ot.giphy(tag))
 
 token = str(os.environ.get('TOKEN', 3))
 bot.loop.create_task(check())
