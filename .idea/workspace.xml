@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="555fd309-8c95-4cc3-8f8a-810489eee87e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="555fd309-8c95-4cc3-8f8a-810489eee87e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +48,7 @@
           <entry key="Procfile" value="2" />
           <entry key="Python Console" value="219" />
           <entry key="md" value="137" />
-          <entry key="py" value="22112" />
+          <entry key="py" value="22114" />
           <entry key="txt" value="1322" />
         </counts>
       </usages-collector>
@@ -58,7 +56,7 @@
         <counts>
           <entry key="Markdown" value="137" />
           <entry key="PLAIN_TEXT" value="1324" />
-          <entry key="Python" value="22331" />
+          <entry key="Python" value="22333" />
         </counts>
       </usages-collector>
     </session>
@@ -68,12 +66,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MainBotv2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="238">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
+                <element signature="e#0#14#0" expanded="true" />
                 <element signature="e#930#1311#0" />
                 <element signature="e#1340#1641#0" />
                 <element signature="e#1668#1911#0" />
@@ -88,22 +87,22 @@
                 <element signature="e#9490#10997#0" />
                 <element signature="e#13197#13536#0" />
                 <element signature="e#13598#15669#0" />
-                <marker date="1535030423805" expanded="true" signature="11093:11098" ph="..." />
-                <marker date="1535030423805" expanded="true" signature="12038:14649" ph="..." />
-                <marker date="1535030423805" expanded="true" signature="18386:18418" ph="..." />
+                <marker date="1535030478434" expanded="true" signature="11093:11098" ph="..." />
+                <marker date="1535030478434" expanded="true" signature="12038:14649" ph="..." />
+                <marker date="1535030478434" expanded="true" signature="18386:18418" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/otherapis.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <marker date="1535030146719" expanded="true" signature="1325:1330" ph="..." />
+                <marker date="1535031408257" expanded="true" signature="1327:1332" ph="..." />
               </folding>
             </state>
           </provider>
@@ -205,9 +204,9 @@
         <option value="$PROJECT_DIR$/codechefcrawlerv2.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/sqlitedb.py" />
-        <option value="$PROJECT_DIR$/otherapis.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/MainBotv2.py" />
+        <option value="$PROJECT_DIR$/otherapis.py" />
       </list>
     </option>
   </component>
@@ -406,13 +405,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534090457079</updated>
-    </task>
-    <task id="LOCAL-00013" summary="filex commands">
-      <created>1534353596178</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1534353596178</updated>
     </task>
     <task id="LOCAL-00014" summary="added to do list (DIDNT TEST MIGHT CAUSE ISSUES)">
       <created>1534364507412</created>
@@ -750,7 +742,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535030443226</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="added gif search feature">
+      <created>1535030486061</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1535030486061</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -908,17 +907,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/otherapis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <marker date="1535030146719" expanded="true" signature="1325:1330" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -935,9 +923,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MainBotv2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
+            <element signature="e#0#14#0" expanded="true" />
             <element signature="e#930#1311#0" />
             <element signature="e#1340#1641#0" />
             <element signature="e#1668#1911#0" />
@@ -952,9 +941,20 @@
             <element signature="e#9490#10997#0" />
             <element signature="e#13197#13536#0" />
             <element signature="e#13598#15669#0" />
-            <marker date="1535030423805" expanded="true" signature="11093:11098" ph="..." />
-            <marker date="1535030423805" expanded="true" signature="12038:14649" ph="..." />
-            <marker date="1535030423805" expanded="true" signature="18386:18418" ph="..." />
+            <marker date="1535030478434" expanded="true" signature="11093:11098" ph="..." />
+            <marker date="1535030478434" expanded="true" signature="12038:14649" ph="..." />
+            <marker date="1535030478434" expanded="true" signature="18386:18418" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/otherapis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <marker date="1535031408257" expanded="true" signature="1327:1332" ph="..." />
           </folding>
         </state>
       </provider>
