@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="555fd309-8c95-4cc3-8f8a-810489eee87e" name="Default Changelist" comment="" />
+    <list default="true" id="555fd309-8c95-4cc3-8f8a-810489eee87e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainBotv2.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainBotv2.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,15 +51,15 @@
           <entry key="Procfile" value="2" />
           <entry key="Python Console" value="219" />
           <entry key="md" value="137" />
-          <entry key="py" value="22114" />
-          <entry key="txt" value="1322" />
+          <entry key="py" value="22176" />
+          <entry key="txt" value="1380" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="137" />
-          <entry key="PLAIN_TEXT" value="1324" />
-          <entry key="Python" value="22333" />
+          <entry key="PLAIN_TEXT" value="1382" />
+          <entry key="Python" value="22395" />
         </counts>
       </usages-collector>
     </session>
@@ -66,11 +69,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MainBotv2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="203">
+              <caret line="131" column="68" selection-start-line="131" selection-start-column="68" selection-end-line="131" selection-end-column="68" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
                 <element signature="e#930#1311#0" />
@@ -79,7 +82,6 @@
                 <element signature="e#1937#4229#0" />
                 <element signature="e#4269#4302#0" />
                 <element signature="e#4365#4625#0" />
-                <element signature="e#4684#5090#0" />
                 <element signature="e#5165#5776#0" />
                 <element signature="e#5851#7170#0" />
                 <element signature="e#7241#9245#0" />
@@ -87,22 +89,22 @@
                 <element signature="e#9490#10997#0" />
                 <element signature="e#13197#13536#0" />
                 <element signature="e#13598#15669#0" />
-                <marker date="1535030478434" expanded="true" signature="11093:11098" ph="..." />
-                <marker date="1535030478434" expanded="true" signature="12038:14649" ph="..." />
-                <marker date="1535030478434" expanded="true" signature="18386:18418" ph="..." />
+                <marker date="1535032404920" expanded="true" signature="11162:11167" ph="..." />
+                <marker date="1535032404920" expanded="true" signature="12107:14718" ph="..." />
+                <marker date="1535032404920" expanded="true" signature="18455:18490" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/otherapis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+            <state relative-caret-position="510">
+              <caret line="30" column="76" selection-start-line="30" selection-start-column="76" selection-end-line="30" selection-end-column="76" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <marker date="1535031408257" expanded="true" signature="1327:1332" ph="..." />
+                <marker date="1535031896967" expanded="true" signature="1325:1330" ph="..." />
               </folding>
             </state>
           </provider>
@@ -205,8 +207,8 @@
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/sqlitedb.py" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/MainBotv2.py" />
         <option value="$PROJECT_DIR$/otherapis.py" />
+        <option value="$PROJECT_DIR$/MainBotv2.py" />
       </list>
     </option>
   </component>
@@ -405,27 +407,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534090457079</updated>
-    </task>
-    <task id="LOCAL-00014" summary="added to do list (DIDNT TEST MIGHT CAUSE ISSUES)">
-      <created>1534364507412</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1534364507412</updated>
-    </task>
-    <task id="LOCAL-00015" summary="added to do list (DIDNT TEST MIGHT CAUSE ISSUES)">
-      <created>1534364856575</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1534364856575</updated>
-    </task>
-    <task id="LOCAL-00016" summary="fixing todo issues">
-      <created>1534365205826</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1534365205826</updated>
     </task>
     <task id="LOCAL-00017" summary="fixing todo issues">
       <created>1534365368950</created>
@@ -749,7 +730,28 @@
       <option name="project" value="LOCAL" />
       <updated>1535030486061</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="fixed tag in gif">
+      <created>1535031513438</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1535031513438</updated>
+    </task>
+    <task id="LOCAL-00064" summary="fixed tag in gif">
+      <created>1535031565252</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1535031565252</updated>
+    </task>
+    <task id="LOCAL-00065" summary="add funny tag by default in gif command">
+      <created>1535031921200</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1535031921200</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -798,8 +800,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed yet another mistake" />
-    <MESSAGE value="added live contest command\&#10;bot version 2.2.7" />
     <MESSAGE value="updated new commands in !commands" />
     <MESSAGE value="Added dropbox support?" />
     <MESSAGE value="fixed the todo maybe??" />
@@ -823,7 +823,9 @@
     <MESSAGE value="100% fixed" />
     <MESSAGE value="101% fixed" />
     <MESSAGE value="added gif search feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="added gif search feature" />
+    <MESSAGE value="fixed tag in gif" />
+    <MESSAGE value="add funny tag by default in gif command" />
+    <option name="LAST_COMMIT_MESSAGE" value="add funny tag by default in gif command" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/sqlitedb.py" />
@@ -921,10 +923,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/otherapis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="76" selection-start-line="30" selection-start-column="76" selection-end-line="30" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <marker date="1535031896967" expanded="true" signature="1325:1330" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MainBotv2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="203">
+          <caret line="131" column="68" selection-start-line="131" selection-start-column="68" selection-end-line="131" selection-end-column="68" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
             <element signature="e#930#1311#0" />
@@ -933,7 +946,6 @@
             <element signature="e#1937#4229#0" />
             <element signature="e#4269#4302#0" />
             <element signature="e#4365#4625#0" />
-            <element signature="e#4684#5090#0" />
             <element signature="e#5165#5776#0" />
             <element signature="e#5851#7170#0" />
             <element signature="e#7241#9245#0" />
@@ -941,20 +953,9 @@
             <element signature="e#9490#10997#0" />
             <element signature="e#13197#13536#0" />
             <element signature="e#13598#15669#0" />
-            <marker date="1535030478434" expanded="true" signature="11093:11098" ph="..." />
-            <marker date="1535030478434" expanded="true" signature="12038:14649" ph="..." />
-            <marker date="1535030478434" expanded="true" signature="18386:18418" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/otherapis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <marker date="1535031408257" expanded="true" signature="1327:1332" ph="..." />
+            <marker date="1535032404920" expanded="true" signature="11162:11167" ph="..." />
+            <marker date="1535032404920" expanded="true" signature="12107:14718" ph="..." />
+            <marker date="1535032404920" expanded="true" signature="18455:18490" ph="..." />
           </folding>
         </state>
       </provider>

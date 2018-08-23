@@ -15,7 +15,7 @@ bot = commands.Bot(command_prefix="!")
 
 
 # Some variables
-ver = 'v0.2.5.1'
+ver = 'v0.2.5.3'
 invite = 'https://discordapp.com/oauth2/authorize?&client_id=477512556630507530&scope=bot&permissions=0'
 img = 'https://i.imgur.com/GX02jaL.png'
 foot = 'For a list of commands tpye "!commands"\n{}'.format(ver)
@@ -129,6 +129,7 @@ async def ping(ctx):
     lags = str(lags).split(':')[2]
 
     embed = discord.Embed(title='PONG :ping_pong:', description='<@{}>  , took {} secs!'.format(userid, lags), color=discord.Color.blue())
+    embed.add_field(name='Number of server', value=len(bot.servers))
     embed.set_footer(text=foot)
     embed.set_author(name='EC BOT', url=invite, icon_url=img)
     await bot.say(embed=embed)
