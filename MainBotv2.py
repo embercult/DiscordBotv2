@@ -261,6 +261,16 @@ async def commands(ctx):
 
 
 @commands.command()
+async def ping(ctx):
+    embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command",
+                          color=0xc016d3)
+    embed.set_author(name="EC BOT", url=invite, icon_url=img)
+    embed.add_field(name="!ping", value="Checks if the bot is online and sends a message back with the respond time")
+    embed.set_footer(text=foot)
+    await bot.say(embed=embed)
+
+
+@commands.command()
 async def cookie():
     embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command",
                           color=0xc016d3)
