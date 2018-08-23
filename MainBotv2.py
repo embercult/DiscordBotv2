@@ -4,6 +4,8 @@ import asyncio
 import codechefcrawlerv2 as cc
 import sqlitedb as sql
 import datetime
+import otherapis as ot
+
 
 from itertools import cycle
 import os
@@ -403,6 +405,11 @@ async def updatedb(ctx):
     if member == '139955846900613120':
         sql.updatedb()
         await bot.say("Database ratings have been updated!")
+
+
+@bot.command(pass_context=True)
+async def gif(ctx,tag):
+    await bot.say(ot.giphy())
 
 token = str(os.environ.get('TOKEN', 3))
 bot.loop.create_task(check())
