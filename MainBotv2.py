@@ -13,14 +13,14 @@ bot = commands.Bot(command_prefix="!")
 
 
 # Some variables
-ver = 'v0.2.3.13'
+ver = 'v0.2.3.14'
 invite = 'https://discordapp.com/oauth2/authorize?&client_id=477512556630507530&scope=bot&permissions=0'
 img = 'https://i.imgur.com/GX02jaL.png'
 foot = 'For a list of commands tpye "!commands"\n{}'.format(ver)
 ccicon = 'https://pbs.twimg.com/profile_images/470882849885667329/X48adYnt_400x400.jpeg'
 global verify
 verify = {} # {codechef name : [Time , discord id , discord name , ctx.channel.id]} ##ctx.channel.id to Send message in the same channel if the user is verified (or not)
-stats = ['A bot made by EmberCult','Current version {}'.format(ver),'Say !commands','A bot made by Viplav','Online and ready to use!','Found any error,DM EmberCult!',"I'am Better than gg-chan"]
+stats = ['A bot made by EmberCult','Current version {}'.format(ver),'Say !commands','A bot made by Viplav','Online and ready to use!','Found any error,DM EmberCult',"I'am Better than gg-chan"]
 
 def rating2star(rating):
     star = 0
@@ -107,7 +107,7 @@ async def check():
 
 @bot.event
 async def on_ready():
-    print("Lol it actually started!")
+    print("BOT IS ONLINE")
 
 
 @bot.command(pass_context=True)
@@ -117,6 +117,7 @@ async def version(ctx):
     embed.set_footer(text=foot)
     embed.set_author(name='EC BOT', url=invite, icon_url=img)
     await bot.say(embed=embed)
+
 
 @bot.command(pass_context=True)
 async def ping(ctx):
@@ -248,19 +249,75 @@ async def drating(ctx, user = None):
         await bot.say(embed=embed)
 
 
-@bot.command(pass_context=True)
+@bot.group(pass_context=True)
 async def commands(ctx):
-    embed=discord.Embed(title="**COMMANDS**", description="*A list of commands the bot currently supports*", color=0xc016d3)
-    embed.set_author(name="EC BOT",url=invite, icon_url = img)
-    embed.add_field(name='!ping', value='Replies with pong if its working', inline=False)
-    embed.add_field(name='!cookie [user]', value='Sends a cookie to [user]', inline=False)
-    embed.add_field(name='!link [codechef username]', value='Will link the given code chef username to your discord id', inline=False)
-    embed.add_field(name='!drating [user]', value='Gives you the rating of [user] is he/she has linked their codechef to discord', inline=True)
-    embed.add_field(name='!rating [codechef username]', value='Gives you the rating of  [codechef username] directly from the website', inline=True)
-    embed.add_field(name='!todo [task]', value='Adds task to your todo list', inline=False)
-    embed.add_field(name='!todo', value='Displays your todo list', inline=False)
-    embed.add_field(name='!contests', value='Displays the current and upcoming contests on codechef', inline=False)
+    if ctx.invoked_subcommand is None:
+        embed=discord.Embed(title="**COMMANDS**", description="*For more info on a command type !commands [command name]*", color=0xc016d3)
+        embed.set_author(name="EC BOT",url=invite, icon_url = img)
+        commands = 'ping\ncookie\nrating\nlink\ndrating\ntodo\ncontest'
+        embed.add_field(name="*A list of commands the bot currently supports*", value=commands)
+        embed.set_footer(text=foot)
+        await bot.say(embed=embed)
 
+
+@commands.command()
+async def cookie(ctx):
+    embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command",
+                          color=0xc016d3)
+    embed.set_author(name="EC BOT", url=invite, icon_url=img)
+    embed.add_field(name="!cookie [@user]", value="Sends a warm cookie to the mentioned user")
+    embed.set_footer(text=foot)
+    await bot.say(embed=embed)
+
+
+@commands.command()
+async def rating(ctx):
+    embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command",
+                          color=0xc016d3)
+    embed.set_author(name="EC BOT", url=invite, icon_url=img)
+    embed.add_field(name="!rating [codechef name]", value="Tells the rating of [codechef name] from the codechef website")
+    embed.set_footer(text=foot)
+    await bot.say(embed=embed)
+
+
+@commands.command()
+async def link(ctx):
+    embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command",
+                          color=0xc016d3)
+    embed.set_author(name="EC BOT", url=invite, icon_url=img)
+    embed.add_field(name="!link [codechef name]", value="Will link your discord id with the [codechef name]")
+    embed.set_footer(text=foot)
+    await bot.say(embed=embed)
+
+
+@commands.command()
+async def drating(ctx):
+    embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command",
+                          color=0xc016d3)
+    embed.set_author(name="EC BOT", url=invite, icon_url=img)
+    embed.add_field(name="!drating [discord name]", value="Will tell the rating of [discord name] if they have linked their codechef\n**NOTE**:*Works with partial names too*")
+    embed.set_footer(text=foot)
+    await bot.say(embed=embed)
+
+
+@commands.command()
+async def todo(ctx):
+    embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command",
+                          color=0xc016d3)
+    embed.set_author(name="EC BOT", url=invite, icon_url=img)
+    embed.add_field(name="!todo", value="Will display your todo list")
+    embed.add_field(name="!todo [item]", value="Will add the [item] to your todo list")
+    embed.add_field(name="!clrtodo", value="Will clear your todo list")
+    embed.set_footer(text=foot)
+    await bot.say(embed=embed)
+
+
+@commands.command()
+async def contest(ctx):
+    embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command",
+                          color=0xc016d3)
+    embed.set_author(name="EC BOT", url=invite, icon_url=img)
+    embed.add_field(name="!contest", value="Displays a list of ongoing and upcoming codechef contests")
     embed.set_footer(text=foot)
     await bot.say(embed=embed)
 
@@ -285,6 +342,7 @@ async def todo(ctx,*message):
     embed.set_author(name="EC BOT", url=invite, icon_url=img)
     await bot.say(embed=embed)
 
+
 @bot.command(pass_context=True)
 async def clrtodo(ctx):
     uid = ctx.message.author.id
@@ -294,6 +352,7 @@ async def clrtodo(ctx):
     embed.set_footer(text=foot)
     embed.set_author(name="EC BOT", url=invite, icon_url=img)
     await bot.say(embed=embed)
+
 
 @bot.command(pass_context=True)
 async def contest(ctx):
