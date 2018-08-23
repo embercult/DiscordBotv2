@@ -13,7 +13,7 @@ bot = commands.Bot(command_prefix="!")
 
 
 # Some variables
-ver = 'v0.2.3.14'
+ver = 'v0.2.4.0'
 invite = 'https://discordapp.com/oauth2/authorize?&client_id=477512556630507530&scope=bot&permissions=0'
 img = 'https://i.imgur.com/GX02jaL.png'
 foot = 'For a list of commands tpye "!commands"\n{}'.format(ver)
@@ -261,7 +261,7 @@ async def commands(ctx):
 
 
 @commands.command()
-async def cookie(ctx):
+async def cookie():
     embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command",
                           color=0xc016d3)
     embed.set_author(name="EC BOT", url=invite, icon_url=img)
@@ -271,7 +271,7 @@ async def cookie(ctx):
 
 
 @commands.command()
-async def rating(ctx):
+async def rating(c):
     embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command",
                           color=0xc016d3)
     embed.set_author(name="EC BOT", url=invite, icon_url=img)
@@ -281,7 +281,7 @@ async def rating(ctx):
 
 
 @commands.command()
-async def link(ctx):
+async def link():
     embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command",
                           color=0xc016d3)
     embed.set_author(name="EC BOT", url=invite, icon_url=img)
@@ -291,7 +291,7 @@ async def link(ctx):
 
 
 @commands.command()
-async def drating(ctx):
+async def drating():
     embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command",
                           color=0xc016d3)
     embed.set_author(name="EC BOT", url=invite, icon_url=img)
@@ -301,7 +301,7 @@ async def drating(ctx):
 
 
 @commands.command()
-async def todo(ctx):
+async def todo():
     embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command",
                           color=0xc016d3)
     embed.set_author(name="EC BOT", url=invite, icon_url=img)
@@ -313,7 +313,7 @@ async def todo(ctx):
 
 
 @commands.command()
-async def contest(ctx):
+async def contest():
     embed = discord.Embed(title="**COMMAND HELP**", description="*Details about a command",
                           color=0xc016d3)
     embed.set_author(name="EC BOT", url=invite, icon_url=img)
@@ -386,6 +386,13 @@ async def contest(ctx):
     await bot.say(embed=embed2)
     await bot.say(embed=embed3)
 
+
+@bot.command(pass_context=True)
+async def updatedb(ctx):
+    member = ctx.message.author.id
+    if member == '139955846900613120':
+        sql.updatedb()
+        await bot.say("Database ratings have been updated!")
 
 token = str(os.environ.get('TOKEN', 3))
 bot.loop.create_task(check())
