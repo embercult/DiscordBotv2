@@ -28,7 +28,7 @@ def giphy(tag = None):
     if tag == None:
         url = "http://api.giphy.com/v1/gifs/random?api_key={}&rating=g".format(key)
     else:
-        url = "http://api.giphy.com/v1/gifs/random?api_key={}&tag={}&rating=g".format(key, tag)
+        url = "http://api.giphy.com/v1/gifs/random?api_key={}&tag={}%20funny&rating=g".format(key, tag)
     with urllib.request.urlopen(url) as response:
         pageurl = response.read().decode()
     pageurl = json.loads(pageurl)
