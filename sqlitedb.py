@@ -6,7 +6,7 @@ from struct import pack
 
 
 token1 = str(os.environ.get('TOKENDB', 3))
-dbx = dropbox.Dropbox('gyzZwbGXeIAAAAAAAAAAJDZku8DW0Qlqao3kLO15O4SFFP5_-Bs2rOwzQjihWA5_')
+dbx = dropbox.Dropbox(token1)
 dbx.users_get_current_account()
 
 
