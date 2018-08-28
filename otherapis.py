@@ -1,6 +1,8 @@
 import urllib.parse
 import urllib.request
 import json
+import xml
+
 
 def pastebinpost(user, language, code):  # function to post code on pastebin
     url = "http://pastebin.com/api/api_post.php"
@@ -18,7 +20,7 @@ def pastebinpost(user, language, code):  # function to post code on pastebin
 
     with urllib.request.urlopen(req) as response:  # ask pastebin to make a paste
         pageurl = response.read()  # pastebin tell you the url of paste
-    return pageurl  # return the url
+    return pageurl.decode()  # return the url
 #so i dont like commenting code but when i do i do this
 
 
@@ -33,3 +35,9 @@ def giphy(tag = None):
         pageurl = response.read().decode()
     pageurl = json.loads(pageurl)
     return (pageurl['data']['embed_url'])
+
+def insult():
+    with urllib.request.urlopen("https://insult.mattbas.org/api/insult") as response:
+        x = response.read().decode()
+    return(x)
+
