@@ -485,6 +485,7 @@ async def pb(ctx,lang = 'text',*,msg):
     embed.add_field(name="*Code successfully pasted*", value=codeurl)
     embed.set_footer(text=foot)
     await bot.say(embed=embed)
+    await bot.delete_message(ctx.message)
 
 
 
