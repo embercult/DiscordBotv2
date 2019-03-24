@@ -1,7 +1,7 @@
 bs4==0.0.1
 beautifulsoup4==4.6.2
 discord.py==0.16.12
-requests==2.19.1
+requests>=2.20.0
 aiohttp==1.0.5
 asyncio==3.4.3
 dropbox==9.0.0
